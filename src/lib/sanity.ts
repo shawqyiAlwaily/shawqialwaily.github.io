@@ -1,8 +1,7 @@
 import { createClient } from '@sanity/client';
 import imageUrlBuilder from '@sanity/image-url';
 
-// Replace these with your actual Sanity project credentials
-const SANITY_PROJECT_ID = 'YOUR_PROJECT_ID';
+const SANITY_PROJECT_ID = 'o8u0cayw';
 const SANITY_DATASET = 'production';
 
 export const sanityClient = createClient({
