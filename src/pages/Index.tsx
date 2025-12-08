@@ -33,9 +33,9 @@ const Index = () => {
       <main>
         <HeroSection />
         <BiographySection />
+        <BooksSection />
         <VlogsSection />
         <VideosSection />
-        <BooksSection />
         <MeetingsSection />
       </main>
       
