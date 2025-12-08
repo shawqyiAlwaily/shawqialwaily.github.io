@@ -28,7 +28,7 @@ const translations = {
     'bio.title': 'Biography',
     'bio.subtitle': 'A Life Dedicated to Excellence',
     'bio.content1': 'Shawqi Al-Waily is a distinguished researcher and seasoned politician currently serving at the African Union Commission.',
-    'bio.content2': 'Throughout his illustrious career, he has advised Fortune 500 companies, authored groundbreaking books on leadership, and inspired millions through his thought-provoking speeches. His unique approach combines Eastern philosophical wisdom with Western business acumen, creating a holistic framework for success.',
+    'bio.content2': 'With a strong academic foundation in languages and terminology, he holds two master\'s degrees: one in Translation and Interpretation and a second specialized master\'s in the Translatability of African Union and United Nations Terminology.',
     'bio.content3': 'Today, Dr. Sterling continues to shape the next generation of leaders through his mentorship programs, bestselling publications, and transformative workshops held across the globe.',
     
     // Vlogs
@@ -76,7 +76,7 @@ const translations = {
     'bio.title': 'Biographie',
     'bio.subtitle': 'Une Vie Dédiée à l\'Excellence',
     'bio.content1': 'Shawqi Al-Waily est un chercheur distingué et un politicien chevronné actuellement en poste à la Commission de l\'Union Africaine.',
-    'bio.content2': 'Tout au long de sa carrière illustre, il a conseillé des entreprises du Fortune 500, rédigé des livres révolutionnaires sur le leadership et inspiré des millions de personnes à travers ses discours stimulants. Son approche unique combine la sagesse philosophique orientale avec le sens des affaires occidental, créant un cadre holistique pour le succès.',
+    'bio.content2': 'Avec une solide formation académique en langues et terminologie, il détient deux diplômes de master : l\'un en Traduction et Interprétation et un second master spécialisé en Traductibilité de la Terminologie de l\'Union Africaine et des Nations Unies.',
     'bio.content3': 'Aujourd\'hui, le Dr Sterling continue de former la prochaine génération de leaders à travers ses programmes de mentorat, ses publications à succès et ses ateliers transformateurs organisés à travers le monde.',
     
     // Vlogs
@@ -124,7 +124,7 @@ const translations = {
     'bio.title': 'السيرة الذاتية',
     'bio.subtitle': 'حياة مكرسة للتميز',
     'bio.content1': 'شوقي الوائلي باحث متميز وسياسي محنك يعمل حالياً في مفوضية الاتحاد الأفريقي.',
-    'bio.content2': 'طوال مسيرته المهنية اللامعة، قدم المشورة لشركات فورتشن 500، وألف كتباً رائدة في القيادة، وألهم الملايين من خلال خطاباته المثيرة للتفكير. يجمع نهجه الفريد بين الحكمة الفلسفية الشرقية والفطنة التجارية الغربية، مما يخلق إطاراً شاملاً للنجاح.',
+    'bio.content2': 'بخلفية أكاديمية قوية في اللغات والمصطلحات، يحمل درجتي ماجستير: واحدة في الترجمة التحريرية والشفوية وماجستير متخصص ثانٍ في قابلية ترجمة مصطلحات الاتحاد الأفريقي والأمم المتحدة.',
     'bio.content3': 'اليوم، يواصل الدكتور ستيرلينغ تشكيل الجيل القادم من القادة من خلال برامجه الإرشادية ومنشوراته الأكثر مبيعاً وورش العمل التحويلية التي يعقدها حول العالم.',
     
     // Vlogs
