@@ -29,7 +29,7 @@ const translations = {
     'bio.subtitle': 'A Life Dedicated to Excellence',
     'bio.content1': 'Shawqi Al-Waily is a distinguished researcher and seasoned politician currently serving at the African Union Commission.',
     'bio.content2': 'With a strong academic foundation in languages and terminology, he holds two master\'s degrees: one in Translation and Interpretation and a second specialized master\'s in the Translatability of African Union and United Nations Terminology.',
-    'bio.content3': 'Today, Dr. Sterling continues to shape the next generation of leaders through his mentorship programs, bestselling publications, and transformative workshops held across the globe.',
+    'bio.content3': 'A prolific author and scholar, Shawqi has written six books and compiled a comprehensive glossary of acronyms widely used in international and continental organizations. His work bridges linguistic precision with political and institutional practice, contributing significantly to clearer communication within the African Union, the United Nations, and related multilateral frameworks. Through his dual expertise in research and politics, Shawqi Al-Waily continues to play an influential role in advancing African integration, multilingualism, and effective governance at the continental level.',
     
     // Vlogs
     'vlogs.title': 'Vlogs',
@@ -77,7 +77,7 @@ const translations = {
     'bio.subtitle': 'Une Vie Dédiée à l\'Excellence',
     'bio.content1': 'Shawqi Al-Waily est un chercheur distingué et un politicien chevronné actuellement en poste à la Commission de l\'Union Africaine.',
     'bio.content2': 'Avec une solide formation académique en langues et terminologie, il détient deux diplômes de master : l\'un en Traduction et Interprétation et un second master spécialisé en Traductibilité de la Terminologie de l\'Union Africaine et des Nations Unies.',
-    'bio.content3': 'Aujourd\'hui, le Dr Sterling continue de former la prochaine génération de leaders à travers ses programmes de mentorat, ses publications à succès et ses ateliers transformateurs organisés à travers le monde.',
+    'bio.content3': 'Auteur prolifique et érudit, Shawqi a écrit six livres et compilé un glossaire complet des acronymes largement utilisés dans les organisations internationales et continentales. Son travail établit un pont entre la précision linguistique et la pratique politique et institutionnelle, contribuant de manière significative à une communication plus claire au sein de l\'Union Africaine, des Nations Unies et des cadres multilatéraux connexes. Grâce à sa double expertise en recherche et en politique, Shawqi Al-Waily continue de jouer un rôle influent dans l\'avancement de l\'intégration africaine, du multilinguisme et de la gouvernance efficace au niveau continental.',
     
     // Vlogs
     'vlogs.title': 'Vlogs',
@@ -125,7 +125,7 @@ const translations = {
     'bio.subtitle': 'حياة مكرسة للتميز',
     'bio.content1': 'شوقي الوائلي باحث متميز وسياسي محنك يعمل حالياً في مفوضية الاتحاد الأفريقي.',
     'bio.content2': 'بخلفية أكاديمية قوية في اللغات والمصطلحات، يحمل درجتي ماجستير: واحدة في الترجمة التحريرية والشفوية وماجستير متخصص ثانٍ في قابلية ترجمة مصطلحات الاتحاد الأفريقي والأمم المتحدة.',
-    'bio.content3': 'اليوم، يواصل الدكتور ستيرلينغ تشكيل الجيل القادم من القادة من خلال برامجه الإرشادية ومنشوراته الأكثر مبيعاً وورش العمل التحويلية التي يعقدها حول العالم.',
+    'bio.content3': 'مؤلف غزير الإنتاج وعالم بارز، كتب شوقي ستة كتب وجمع قاموساً شاملاً للاختصارات المستخدمة على نطاق واسع في المنظمات الدولية والقارية. يربط عمله بين الدقة اللغوية والممارسة السياسية والمؤسسية، مما يساهم بشكل كبير في تحقيق تواصل أوضح داخل الاتحاد الأفريقي والأمم المتحدة والأطر متعددة الأطراف ذات الصلة. من خلال خبرته المزدوجة في البحث والسياسة، يواصل شوقي الوائلي لعب دور مؤثر في تعزيز التكامل الأفريقي وتعدد اللغات والحوكمة الفعالة على المستوى القاري.',
     
     // Vlogs
     'vlogs.title': 'المدونات المرئية',
