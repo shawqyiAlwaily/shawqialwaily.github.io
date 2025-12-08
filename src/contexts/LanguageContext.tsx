@@ -27,7 +27,7 @@ const translations = {
     // Biography
     'bio.title': 'Biography',
     'bio.subtitle': 'A Life Dedicated to Excellence',
-    'bio.content1': 'With over three decades of experience in leadership and strategic thinking, Dr. Alexander Sterling has transformed the landscape of modern business philosophy. His journey began in the corridors of prestigious universities, where his insatiable curiosity and analytical mind set him apart from his peers.',
+    'bio.content1': 'Shawqi Al-Waily is a distinguished researcher and seasoned politician currently serving at the African Union Commission.',
     'bio.content2': 'Throughout his illustrious career, he has advised Fortune 500 companies, authored groundbreaking books on leadership, and inspired millions through his thought-provoking speeches. His unique approach combines Eastern philosophical wisdom with Western business acumen, creating a holistic framework for success.',
     'bio.content3': 'Today, Dr. Sterling continues to shape the next generation of leaders through his mentorship programs, bestselling publications, and transformative workshops held across the globe.',
     
@@ -75,7 +75,7 @@ const translations = {
     // Biography
     'bio.title': 'Biographie',
     'bio.subtitle': 'Une Vie Dédiée à l\'Excellence',
-    'bio.content1': 'Avec plus de trois décennies d\'expérience en leadership et en réflexion stratégique, le Dr Alexander Sterling a transformé le paysage de la philosophie commerciale moderne. Son parcours a commencé dans les couloirs des universités prestigieuses, où sa curiosité insatiable et son esprit analytique l\'ont distingué de ses pairs.',
+    'bio.content1': 'Shawqi Al-Waily est un chercheur distingué et un politicien chevronné actuellement en poste à la Commission de l\'Union Africaine.',
     'bio.content2': 'Tout au long de sa carrière illustre, il a conseillé des entreprises du Fortune 500, rédigé des livres révolutionnaires sur le leadership et inspiré des millions de personnes à travers ses discours stimulants. Son approche unique combine la sagesse philosophique orientale avec le sens des affaires occidental, créant un cadre holistique pour le succès.',
     'bio.content3': 'Aujourd\'hui, le Dr Sterling continue de former la prochaine génération de leaders à travers ses programmes de mentorat, ses publications à succès et ses ateliers transformateurs organisés à travers le monde.',
     
@@ -123,7 +123,7 @@ const translations = {
     // Biography
     'bio.title': 'السيرة الذاتية',
     'bio.subtitle': 'حياة مكرسة للتميز',
-    'bio.content1': 'مع أكثر من ثلاثة عقود من الخبرة في القيادة والتفكير الاستراتيجي، غيّر الدكتور ألكسندر ستيرلينغ مشهد فلسفة الأعمال الحديثة. بدأت رحلته في أروقة الجامعات المرموقة، حيث ميزه فضوله النهم وعقله التحليلي عن أقرانه.',
+    'bio.content1': 'شوقي الوائلي باحث متميز وسياسي محنك يعمل حالياً في مفوضية الاتحاد الأفريقي.',
     'bio.content2': 'طوال مسيرته المهنية اللامعة، قدم المشورة لشركات فورتشن 500، وألف كتباً رائدة في القيادة، وألهم الملايين من خلال خطاباته المثيرة للتفكير. يجمع نهجه الفريد بين الحكمة الفلسفية الشرقية والفطنة التجارية الغربية، مما يخلق إطاراً شاملاً للنجاح.',
     'bio.content3': 'اليوم، يواصل الدكتور ستيرلينغ تشكيل الجيل القادم من القادة من خلال برامجه الإرشادية ومنشوراته الأكثر مبيعاً وورش العمل التحويلية التي يعقدها حول العالم.',
     
