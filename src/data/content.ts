@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: 'Dr. Alexander Sterling',
+  name: 'Shawqi (Saadeldin) AlWaily',
   image: '/portrait.jpg', // Will be generated
   socialLinks: {
     twitter: 'https://twitter.com',
