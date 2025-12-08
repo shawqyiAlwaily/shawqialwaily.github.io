@@ -14,7 +14,7 @@ const HeroSection = () => {
       {/* Full Width Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80"
+          src="/images/shawqi-portrait.jpg"
           alt={personalInfo.name}
           className="w-full h-full object-cover"
         />
