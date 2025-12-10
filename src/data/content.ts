@@ -191,9 +191,9 @@ export const books = [
     id: 'book-4',
     slug: 'foundations-of-excellence',
     title: {
-      en: 'Foundations of Excellence',
-      fr: 'Les Fondations de l\'Excellence',
-      ar: 'أسس التميز',
+      en: 'The Mask of Civility',
+      fr: 'Le Masque de la Civilité',
+      ar: 'قناع الحضارة',
     },
     description: {
       en: 'Building organizations that stand the test of time through principled leadership.',
