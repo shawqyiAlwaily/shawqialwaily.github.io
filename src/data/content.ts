@@ -196,9 +196,9 @@ export const books = [
       ar: 'قناع الحضارة',
     },
     description: {
-      en: 'Building organizations that stand the test of time through principled leadership.',
-      fr: 'Construire des organisations qui résistent à l\'épreuve du temps grâce à un leadership fondé sur des principes.',
-      ar: 'بناء منظمات تصمد أمام اختبار الزمن من خلال القيادة المبدئية.',
+      en: 'The Mask of Civility: A Philosophical Inquiry into Human Nature, Self-Reliance, and the Architecture of National Greatness Shawqi Alwaily October 1st, 2025',
+      fr: 'Le Masque de la Civilité: Une enquête philosophique sur la nature humaine, l\'autosuffisance et l\'architecture de la grandeur nationale Shawqi Alwaily 1er octobre 2025',
+      ar: 'قناع الحضارة: بحث فلسفي في الطبيعة البشرية والاعتماد على الذات وهندسة العظمة الوطنية شوقي العويلي 1 أكتوبر 2025',
     },
     excerpt: {
       en: 'Chapter 1: The Bedrock of Greatness\n\nEvery enduring organization, every lasting legacy, every monument to human achievement stands upon a foundation. This foundation is not built of stone or steel, but of principles—the immutable truths that guide decision-making, shape culture, and determine destiny.\n\nIn studying organizations that have thrived for decades or even centuries, I have discovered a remarkable pattern: their success is not attributable to any single innovation or strategy, but to the unwavering commitment to a set of foundational principles.',
