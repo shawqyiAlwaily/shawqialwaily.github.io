@@ -169,9 +169,9 @@ export const books = [
     id: 'book-3',
     slug: 'the-art-of-influence',
     title: {
-      en: 'The Art of Influence',
-      fr: 'L\'Art de l\'Influence',
-      ar: 'فن التأثير',
+      en: 'EXAMINING DETERMINISTIC NARRATIVES OF AFRICAN DEVELOPMENT',
+      fr: 'EXAMEN DES RÉCITS DÉTERMINISTES DU DÉVELOPPEMENT AFRICAIN',
+      ar: 'دراسة السرديات الحتمية للتنمية الأفريقية',
     },
     description: {
       en: 'Master the subtle art of inspiring and motivating others to achieve extraordinary results.',
