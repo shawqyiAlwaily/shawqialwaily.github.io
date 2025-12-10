@@ -130,9 +130,9 @@ export const books = [
       ar: 'العقل البصير',
     },
     description: {
-      en: 'A comprehensive guide to developing foresight and strategic thinking in leadership.',
-      fr: 'Un guide complet pour développer la prévoyance et la pensée stratégique en leadership.',
-      ar: 'دليل شامل لتطوير البصيرة والتفكير الاستراتيجي في القيادة.',
+      en: 'A Comprehensive Geopolitical Analysis of Middle Eastern Dynamics with Critical Focus on Saudi Arabia and the UAE A Critical Examination of Regional Power, Strategic Evolution, and the Architecture of Contemporary Conflict Shawqi Alwaily October 30, 2025',
+      fr: 'Une analyse géopolitique complète des dynamiques du Moyen-Orient avec un focus critique sur l\'Arabie Saoudite et les Émirats Arabes Unis - Un examen critique du pouvoir régional, de l\'évolution stratégique et de l\'architecture des conflits contemporains Shawqi Alwaily 30 octobre 2025',
+      ar: 'تحليل جيوسياسي شامل لديناميكيات الشرق الأوسط مع تركيز نقدي على المملكة العربية السعودية والإمارات العربية المتحدة - فحص نقدي للقوة الإقليمية والتطور الاستراتيجي وهندسة الصراعات المعاصرة شوقي العويلي 30 أكتوبر 2025',
     },
     excerpt: {
       en: 'Chapter 1: The Architecture of Vision\n\nTrue leadership begins not with action, but with sight—the ability to perceive what others cannot, to see beyond the horizon of the present moment into the vast landscape of possibility. This is not mysticism; it is a cultivated skill, a disciplined practice that can be learned, refined, and mastered.\n\nIn my three decades of studying and practicing leadership, I have observed that the most transformative leaders share one common trait: they possess an almost prophetic ability to anticipate change before it occurs.',
