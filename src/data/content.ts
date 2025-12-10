@@ -147,9 +147,9 @@ export const books = [
     id: 'book-2',
     slug: 'leading-through-chaos',
     title: {
-      en: 'Leading Through Chaos',
-      fr: 'Diriger à Travers le Chaos',
-      ar: 'القيادة عبر الفوضى',
+      en: 'The Perpetual Paradox',
+      fr: 'Le Paradoxe Perpétuel',
+      ar: 'المفارقة الدائمة',
     },
     description: {
       en: 'Strategies for maintaining composure and guiding organizations through turbulent times.',
