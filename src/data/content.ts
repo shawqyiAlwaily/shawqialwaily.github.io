@@ -125,9 +125,9 @@ export const books = [
     id: 'book-1',
     slug: 'the-visionary-mind',
     title: {
-      en: 'The Visionary Mind',
-      fr: 'L\'Esprit Visionnaire',
-      ar: 'العقل البصير',
+      en: 'From Proxy War to Proxy Peace',
+      fr: 'De la Guerre par Procuration à la Paix par Procuration',
+      ar: 'من الحرب بالوكالة إلى السلام بالوكالة',
     },
     description: {
       en: 'A Comprehensive Geopolitical Analysis of Middle Eastern Dynamics with Critical Focus on Saudi Arabia and the UAE A Critical Examination of Regional Power, Strategic Evolution, and the Architecture of Contemporary Conflict Shawqi Alwaily October 30, 2025',
