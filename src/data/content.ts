@@ -174,9 +174,9 @@ export const books = [
       ar: 'دراسة السرديات الحتمية للتنمية الأفريقية',
     },
     description: {
-      en: 'Master the subtle art of inspiring and motivating others to achieve extraordinary results.',
-      fr: 'Maîtrisez l\'art subtil d\'inspirer et de motiver les autres pour obtenir des résultats extraordinaires.',
-      ar: 'أتقن الفن الدقيق لإلهام وتحفيز الآخرين لتحقيق نتائج استثنائية.',
+      en: 'The analysis provides intensive examination of Ethiopia\'s multifaceted challenges— including the devastating Tigray War (2020-2022) that caused an estimated 385,000-600,000 deaths, rising poverty rates projected to reach 43% by 2025 (up from 33% in 2016), debt default and restructuring, and ongoing ethnic conflicts.',
+      fr: 'L\'analyse fournit un examen approfondi des défis multiples de l\'Éthiopie— y compris la guerre dévastatrice du Tigré (2020-2022) qui a causé environ 385 000 à 600 000 morts, des taux de pauvreté en hausse projetés à 43% d\'ici 2025 (contre 33% en 2016), le défaut de paiement et la restructuration de la dette, et les conflits ethniques en cours.',
+      ar: 'يقدم التحليل فحصاً مكثفاً لتحديات إثيوبيا المتعددة الأوجه— بما في ذلك حرب تيغراي المدمرة (2020-2022) التي تسببت في ما يقدر بـ 385,000-600,000 حالة وفاة، ومعدلات الفقر المتزايدة المتوقع أن تصل إلى 43% بحلول 2025 (ارتفاعاً من 33% في 2016)، والتخلف عن سداد الديون وإعادة الهيكلة، والصراعات العرقية المستمرة.',
     },
     excerpt: {
       en: 'Preface: Beyond Manipulation\n\nInfluence is perhaps the most misunderstood aspect of leadership. In popular culture, influence is often conflated with manipulation—the cynical art of bending others to one\'s will through deception or coercion. But true influence operates on an entirely different plane.\n\nAuthentic influence is not about controlling others; it is about inspiring them. It is not about imposing your vision; it is about helping others discover their own vision and aligning it with a greater purpose.',
