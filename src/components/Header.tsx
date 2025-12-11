@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import { cn } from '@/lib/utils';
@@ -7,7 +7,8 @@ import { Menu, X } from 'lucide-react';
 const Header = () => {
   const { t, isRTL } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,19 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMenuOpen]);
   
   const navItems = [
     { href: '#hero', label: t('nav.home') },
@@ -32,7 +46,7 @@ const Header = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMobileMenuOpen(false);
+    setIsMenuOpen(false);
   };
   
   return (
@@ -45,72 +59,69 @@ const Header = () => {
       )}
     >
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between">
-          {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 gap-8">
-            {navItems.map((item) => (
-              <button
-                key={item.href}
-                onClick={() => scrollToSection(item.href)}
-                className={cn(
-                  "text-sm font-medium transition-all duration-300 relative group",
-                  isScrolled
-                    ? "text-foreground hover:text-primary"
-                    : "text-primary-foreground/90 hover:text-primary-foreground"
-                )}
-              >
-                {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300" />
-              </button>
-            ))}
-          </nav>
+        <div className="flex items-center justify-end gap-4">
+          <LanguageSwitcher />
           
-          {/* Language Switcher - Right */}
-          <div className={cn(
-            "flex items-center gap-4",
-            isRTL ? "flex-row-reverse" : ""
-          )}>
-            <LanguageSwitcher />
-            
-            {/* Mobile Menu Button */}
+          {/* Hamburger Menu */}
+          <div ref={menuRef} className="relative">
             <button
-              className="lg:hidden p-2"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              {isMobileMenuOpen ? (
-                <X className={cn(
-                  "w-6 h-6 transition-colors",
-                  isScrolled ? "text-foreground" : "text-primary-foreground"
-                )} />
-              ) : (
-                <Menu className={cn(
-                  "w-6 h-6 transition-colors",
-                  isScrolled ? "text-foreground" : "text-primary-foreground"
-                )} />
+              className={cn(
+                "p-2 rounded-lg transition-all duration-300",
+                isScrolled 
+                  ? "hover:bg-muted" 
+                  : "hover:bg-primary-foreground/10"
               )}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <div className="relative w-6 h-6">
+                <Menu 
+                  className={cn(
+                    "w-6 h-6 absolute inset-0 transition-all duration-300",
+                    isScrolled ? "text-foreground" : "text-primary-foreground",
+                    isMenuOpen ? "opacity-0 rotate-90" : "opacity-100 rotate-0"
+                  )} 
+                />
+                <X 
+                  className={cn(
+                    "w-6 h-6 absolute inset-0 transition-all duration-300",
+                    isScrolled ? "text-foreground" : "text-primary-foreground",
+                    isMenuOpen ? "opacity-100 rotate-0" : "opacity-0 -rotate-90"
+                  )} 
+                />
+              </div>
             </button>
+
+            {/* Dropdown Menu */}
+            <div
+              className={cn(
+                "absolute top-full mt-2 bg-card/98 backdrop-blur-md rounded-xl shadow-elegant border border-border/50 overflow-hidden transition-all duration-300 origin-top-right",
+                isRTL ? "left-0" : "right-0",
+                isMenuOpen 
+                  ? "opacity-100 scale-100 translate-y-0" 
+                  : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
+              )}
+            >
+              <nav className="py-2 min-w-[180px]">
+                {navItems.map((item, index) => (
+                  <button
+                    key={item.href}
+                    onClick={() => scrollToSection(item.href)}
+                    className={cn(
+                      "w-full px-5 py-3 text-foreground font-medium text-left hover:bg-muted/50 hover:text-primary transition-all duration-200",
+                      isRTL && "text-right"
+                    )}
+                    style={{
+                      animationDelay: isMenuOpen ? `${index * 50}ms` : '0ms'
+                    }}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </nav>
+            </div>
           </div>
         </div>
-      </div>
-      
-      {/* Mobile Menu */}
-      <div
-        className={cn(
-          "lg:hidden fixed inset-x-0 top-full bg-card/98 backdrop-blur-md shadow-lg transition-all duration-300 overflow-hidden",
-          isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        )}
-      >
-        <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
-          {navItems.map((item) => (
-            <button
-              key={item.href}
-              onClick={() => scrollToSection(item.href)}
-              className="text-foreground font-medium py-2 text-left hover:text-primary transition-colors"
-            >
-              {item.label}
-            </button>
-          ))}
-        </nav>
       </div>
     </header>
   );
