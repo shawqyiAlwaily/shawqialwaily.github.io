@@ -30,7 +30,7 @@ const HeroSection = () => {
           </div>
           
           {/* Name */}
-          <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-primary-foreground leading-tight opacity-0 animate-fade-up drop-shadow-lg" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+          <h1 className="font-playfair text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-primary leading-tight opacity-0 animate-fade-up drop-shadow-lg" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             {personalInfo.name}
           </h1>
           
