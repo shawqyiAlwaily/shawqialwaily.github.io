@@ -134,7 +134,7 @@
   body {
     @apply bg-background antialiased;
     font-family: 'Inter', sans-serif;
-    color: hsl(222 33% 20%); /* #1F2A44 - Deep navy for comfortable reading */
+    color: hsl(220 50% 28%); /* #243B6B - Blue for readable text */
     line-height: 1.75;
   }
   
