@@ -90,13 +90,13 @@ const MeetingsSection = () => {
                     </h3>
                     
                     {/* Location */}
-                    <div className={`flex items-center gap-2 text-muted-foreground text-sm mb-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                    <div className={`flex items-center gap-2 text-primary text-sm mb-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
                       <MapPin className="w-4 h-4 text-primary" />
                       <span>{meeting.location[language as keyof typeof meeting.location]}</span>
                     </div>
                     
                     {/* Description */}
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-primary leading-relaxed">
                       {meeting.description[language as keyof typeof meeting.description]}
                     </p>
                   </div>

@@ -85,7 +85,7 @@ const VideosSection = () => {
                   <h3 className="font-playfair text-base font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2">
                     {video.title[language as keyof typeof video.title]}
                   </h3>
-                  <p className="text-muted-foreground text-xs mt-2 line-clamp-2">
+                  <p className="text-primary text-xs mt-2 line-clamp-2">
                     {video.description[language as keyof typeof video.description]}
                   </p>
                 </div>

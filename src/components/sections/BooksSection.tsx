@@ -100,7 +100,7 @@ const BooksSection = () => {
                 <h4 className="font-playfair text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                   {book.title[language as keyof typeof book.title]}
                 </h4>
-                <p className="text-muted-foreground text-sm mt-2 line-clamp-2">
+                <p className="text-primary text-sm mt-2 line-clamp-2">
                   {book.description[language as keyof typeof book.description]}
                 </p>
                 

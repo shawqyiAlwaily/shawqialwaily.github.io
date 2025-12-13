@@ -85,7 +85,7 @@ const VlogsSection = () => {
                   <h3 className="font-playfair text-xl font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2 mb-3">
                     {vlog.title[language as keyof typeof vlog.title]}
                   </h3>
-                  <p className="text-muted-foreground text-sm line-clamp-2">
+                  <p className="text-primary text-sm line-clamp-2">
                     {vlog.description[language as keyof typeof vlog.description]}
                   </p>
                   
