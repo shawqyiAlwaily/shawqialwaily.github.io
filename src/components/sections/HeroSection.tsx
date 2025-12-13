@@ -14,9 +14,9 @@ const HeroSection = () => {
       {/* Full Width Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/images/shawqi-hero.jpg"
+          src="/images/shawqi-hero-new.png"
           alt={personalInfo.name}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover -scale-x-100"
         />
       </div>
       
