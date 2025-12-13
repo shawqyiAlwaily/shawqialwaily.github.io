@@ -84,8 +84,8 @@ const BiographySection = () => {
           <div className={`space-y-8 ${isVisible ? 'animate-slide-in-right' : 'opacity-0'} ${isRTL ? 'lg:col-start-1' : ''}`} style={{
           animationDelay: '0.4s'
         }}>
-            <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
-              <p className="text-primary">{t('bio.content1')}</p>
+            <div className="space-y-6 text-primary leading-relaxed text-lg">
+              <p>{t('bio.content1')}</p>
               <p>{t('bio.content2')}</p>
               <p>{t('bio.content3')}</p>
             </div>

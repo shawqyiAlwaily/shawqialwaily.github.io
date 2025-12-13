@@ -39,13 +39,13 @@ const Footer = () => {
               <div className="text-center">
                 <a 
                   href="tel:+201002307197" 
-                  className="block text-[hsl(220_50%_28%)] hover:text-accent transition-colors font-medium"
+                  className="block text-primary hover:text-accent transition-colors font-medium"
                 >
                   +20 100 230 7197
                 </a>
                 <a 
                   href="tel:+251912601933" 
-                  className="block text-[hsl(220_50%_28%)] hover:text-accent transition-colors font-medium"
+                  className="block text-primary hover:text-accent transition-colors font-medium"
                 >
                   +251 912 601 933
                 </a>
@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
               <a 
                 href="mailto:shawqialwaily@outlook.com" 
-                className="text-[hsl(220_50%_28%)] hover:text-accent transition-colors font-medium"
+                className="text-primary hover:text-accent transition-colors font-medium"
               >
                 shawqialwaily@outlook.com
               </a>
