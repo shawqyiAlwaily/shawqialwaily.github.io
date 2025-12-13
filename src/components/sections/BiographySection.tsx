@@ -85,7 +85,7 @@ const BiographySection = () => {
           animationDelay: '0.4s'
         }}>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
-              <p>{t('bio.content1')}</p>
+              <p className="text-primary">{t('bio.content1')}</p>
               <p>{t('bio.content2')}</p>
               <p>{t('bio.content3')}</p>
             </div>
