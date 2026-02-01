@@ -186,15 +186,19 @@ const translations = {
 
 		// Hero
 		"hero.role": "Líder | Autor | Visionario",
-		"hero.description": "Inspirando mentes, formando futuros y liderando con propósito.",
+		"hero.description":
+			"Inspirando mentes, formando futuros y liderando con propósito.",
 		"hero.explore": "Explora Mi Trayectoria",
 
 		// Biography
 		"bio.title": "Biografía",
 		"bio.subtitle": "Una vida dedicada a la excelencia",
-		"bio.content1": "Shawqi Al-Waily es un investigador distinguido y un político con servicio en la Comisión de la Unión Africana.",
-		"bio.content2": "Con una sólida formación académica en lenguas y terminología, posee dos maestrías: una en Traducción e Interpretación y otra especializada en la traducibilidad de la terminología de la Unión Africana y las Naciones Unidas.",
-		"bio.content3": "Autor prolífico y académico, Shawqi ha escrito seis libros y compilado un glosario completo de siglas usado en organizaciones internacionales y continentales. Su trabajo une la precisión lingüística con la práctica política e institucional, contribuyendo a una comunicación más clara dentro de la Unión Africana, las Naciones Unidas y los marcos multilaterales relacionados. Gracias a su doble experiencia en investigación y política, Shawqi Al-Waily continúa desempeñando un papel influyente en el avance de la integración africana, el multilingüismo y la gobernanza eficaz a nivel continental.",
+		"bio.content1":
+			"Shawqi Al-Waily es un investigador distinguido y un político con servicio en la Comisión de la Unión Africana.",
+		"bio.content2":
+			"Con una sólida formación académica en lenguas y terminología, posee dos maestrías: una en Traducción e Interpretación y otra especializada en la traducibilidad de la terminología de la Unión Africana y las Naciones Unidas.",
+		"bio.content3":
+			"Autor prolífico y académico, Shawqi ha escrito seis libros y compilado un glosario completo de siglas usado en organizaciones internacionales y continentales. Su trabajo une la precisión lingüística con la práctica política e institucional, contribuyendo a una comunicación más clara dentro de la Unión Africana, las Naciones Unidas y los marcos multilaterales relacionados. Gracias a su doble experiencia en investigación y política, Shawqi Al-Waily continúa desempeñando un papel influyente en el avance de la integración africana, el multilingüismo y la gobernanza eficaz a nivel continental.",
 
 		// Vlogs
 		"vlogs.title": "Vlogs",
@@ -226,7 +230,7 @@ const translations = {
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
-	undefined
+	undefined,
 );
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({

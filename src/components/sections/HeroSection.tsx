@@ -77,7 +77,7 @@ const AbstractForm = () => {
 			color: "#7dd3fc",
 			envMapIntensity: 1,
 		}),
-		[]
+		[],
 	);
 
 	useFrame((state) => {
