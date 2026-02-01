@@ -5,14 +5,27 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-  },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+	server: {
+		host: "0.0.0.0",
+		// prefer explicit PORT env var, fallback to 5174 per request
+		port: Number(process.env.PORT) || 5174,
+	},
+	plugins: [react(), mode === "development" && componentTagger()].filter(
+		Boolean
+	),
+	resolve: {
+		alias: {
+			"@": path.resolve(__dirname, "./src"),
+		},
+	},
+	build: {
+		rollupOptions: {
+			output: {
+				manualChunks: {
+					react: ["react", "react-dom"],
+					three: ["three", "@react-three/fiber", "@react-three/drei"],
+				},
+			},
+		},
+	},
 }));
