@@ -2,7 +2,15 @@ import { useState, useEffect, useRef } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { cn } from "@/lib/utils";
-import { Menu, X, Linkedin, Phone, Mail } from "lucide-react";
+import {
+	Menu,
+	X,
+	Linkedin,
+	Phone,
+	Mail,
+	Twitter,
+	Facebook,
+} from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { personalInfo } from "@/data/content";
 
@@ -146,7 +154,27 @@ const Header = () => {
 													Shawqi Al-Waily
 												</h2>
 											</div>
-											<div className="flex items-center gap-3 text-white/80">
+											<div className="flex flex-col gap-3 text-white/80">
+												<a
+													href="http://x.com/shawky39851988"
+													target="_blank"
+													rel="noopener noreferrer"
+													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+												>
+													<Twitter className="w-5 h-5 text-white" />
+													<span className="text-white">X</span>
+												</a>
+
+												<a
+													href="https://www.facebook.com/shawki.mohammed.1"
+													target="_blank"
+													rel="noopener noreferrer"
+													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+												>
+													<Facebook className="w-5 h-5 text-white" />
+													<span className="text-white">Facebook</span>
+												</a>
+
 												<a
 													href="https://www.linkedin.com/in/shawqi-alwaily-886744111/"
 													target="_blank"
