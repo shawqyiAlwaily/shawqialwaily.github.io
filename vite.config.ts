@@ -5,9 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+	base: "/", // ← ADD THIS LINE (fixes path issues)
 	server: {
 		host: "0.0.0.0",
-		// prefer explicit PORT env var, fallback to 5174 per request
 		port: Number(process.env.PORT) || 5174,
 	},
 	plugins: [react(), mode === "development" && componentTagger()].filter(
