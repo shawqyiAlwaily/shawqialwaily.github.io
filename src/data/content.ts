@@ -191,53 +191,6 @@ export const books = [
 		amazonUrl: "https://www.amazon.com/dp/B0FVM4K7N2",
 		year: 2021,
 	},
-	{
-		id: "book-3",
-		slug: "the-art-of-influence",
-		title: {
-			en: "EXAMINING DETERMINISTIC NARRATIVES OF AFRICAN DEVELOPMENT",
-			fr: "EXAMEN DES RÉCITS DÉTERMINISTES DU DÉVELOPPEMENT AFRICAIN",
-			ar: "دراسة السرديات الحتمية للتنمية الأفريقية",
-			es: "EXAMEN DE LAS NARRATIVAS DETERMINISTAS DEL DESARROLLO AFRICANO",
-		},
-		description: {
-			en: "The analysis provides intensive examination of Ethiopia's multifaceted challenges— including the devastating Tigray War (2020-2022) that caused an estimated 385,000-600,000 deaths, rising poverty rates projected to reach 43% by 2025 (up from 33% in 2016), debt default and restructuring, and ongoing ethnic conflicts.",
-			fr: "L'analyse fournit un examen approfondi des défis multiples de l'Éthiopie— y compris la guerre dévastatrice du Tigré (2020-2022) qui a causé environ 385 000 à 600 000 morts, des taux de pauvreté en hausse projetés à 43% d'ici 2025 (contre 33% en 2016), le défaut de paiement et la restructuration de la dette, et les conflits ethniques en cours.",
-			ar: "يقدم التحليل فحصاً مكثفاً لتحديات إثيوبيا المتعددة الأوجه— بما في ذلك حرب تيغراي المدمرة (2020-2022) التي تسببت في ما يقدر بـ 385,000-600,000 حالة وفاة، ومعدلات الفقر المتزايدة المتوقع أن تصل إلى 43% بحلول 2025 (ارتفاعاً من 33% في 2016)، والتخلف عن سداد الديون وإعادة الهيكلة، والصراعات العرقية المستمرة.",
-			es: "El análisis ofrece un examen profundo de los desafíos multifacéticos de Etiopía, incluida la devastadora guerra de Tigray (2020-2022) que causó entre 385.000 y 600.000 muertes, el aumento de las tasas de pobreza proyectadas hasta el 43% para 2025 (desde el 33% en 2016), el impago y la reestructuración de la deuda, y los conflictos étnicos en curso.",
-		},
-		excerpt: {
-			en: "Preface: Beyond Manipulation\n\nInfluence is perhaps the most misunderstood aspect of leadership. In popular culture, influence is often conflated with manipulation—the cynical art of bending others to one's will through deception or coercion. But true influence operates on an entirely different plane.\n\nAuthentic influence is not about controlling others; it is about inspiring them. It is not about imposing your vision; it is about helping others discover their own vision and aligning it with a greater purpose.",
-			fr: "Préface: Au-delà de la Manipulation\n\nL'influence est peut-être l'aspect le plus mal compris du leadership. Dans la culture populaire, l'influence est souvent confondue avec la manipulation—l'art cynique de plier les autres à sa volonté par la tromperie ou la coercition. Mais la véritable influence opère sur un plan entièrement différent.\n\nL'influence authentique ne consiste pas à contrôler les autres; il s'agit de les inspirer. Il ne s'agit pas d'imposer votre vision; il s'agit d'aider les autres à découvrir leur propre vision et à l'aligner sur un objectif plus grand.",
-			ar: "مقدمة: ما وراء التلاعب\n\nالتأثير ربما يكون الجانب الأكثر سوء فهم في القيادة. في الثقافة الشعبية، غالباً ما يُخلط التأثير بالتلاعب—الفن الساخر لإخضاع الآخرين لإرادة المرء من خلال الخداع أو الإكراه. لكن التأثير الحقيقي يعمل على مستوى مختلف تماماً.\n\nالتأثير الأصيل لا يتعلق بالسيطرة على الآخرين؛ إنه يتعلق بإلهامهم. لا يتعلق بفرض رؤيتك؛ إنه يتعلق بمساعدة الآخرين على اكتشاف رؤيتهم الخاصة ومواءمتها مع هدف أعظم.",
-			es: "Prefacio: Más allá de la manipulación\n\nLa influencia es quizás el aspecto más malentendido del liderazgo. En la cultura popular, la influencia a menudo se confunde con la manipulación: el arte cínico de someter a otros a la propia voluntad mediante el engaño o la coerción. Pero la verdadera influencia opera en un plano totalmente distinto.\n\nLa influencia auténtica no consiste en controlar a los demás; consiste en inspirarlos. No se trata de imponer tu visión; se trata de ayudar a otros a descubrir su propia visión y alinearla con un propósito mayor.",
-		},
-	},
-	{
-		id: "book-4",
-		slug: "foundations-of-excellence",
-		title: {
-			en: "The Mask of Civility",
-			fr: "Le Masque de la Civilité",
-			ar: "قناع الحضارة",
-			es: "La máscara de la civilidad",
-		},
-		description: {
-			en: "The Mask of Civility: A Philosophical Inquiry into Human Nature, Self-Reliance, and the Architecture of National Greatness Shawqi Alwaily October 1st, 2025",
-			fr: "Le Masque de la Civilité: Une enquête philosophique sur la nature humaine, l'autosuffisance et l'architecture de la grandeur nationale Shawqi Alwaily 1er octobre 2025",
-			ar: "قناع الحضارة: بحث فلسفي في الطبيعة البشرية والاعتماد على الذات وهندسة العظمة الوطنية شوقي العويلي 1 أكتوبر 2025",
-			es: "La máscara de la civilidad: Una investigación filosófica sobre la naturaleza humana, la autosuficiencia y la arquitectura de la grandeza nacional. Shawqi Alwaily 1 de octubre de 2025",
-		},
-		excerpt: {
-			en: "Chapter 1: The Bedrock of Greatness\n\nEvery enduring organization, every lasting legacy, every monument to human achievement stands upon a foundation. This foundation is not built of stone or steel, but of principles—the immutable truths that guide decision-making, shape culture, and determine destiny.\n\nIn studying organizations that have thrived for decades or even centuries, I have discovered a remarkable pattern: their success is not attributable to any single innovation or strategy, but to the unwavering commitment to a set of foundational principles.",
-			fr: "Chapitre 1: Le Socle de la Grandeur\n\nChaque organisation durable, chaque héritage durable, chaque monument à l'accomplissement humain repose sur une fondation. Cette fondation n'est pas faite de pierre ou d'acier, mais de principes—les vérités immuables qui guident la prise de décision, façonnent la culture et déterminent le destin.\n\nEn étudiant les organisations qui ont prospéré pendant des décennies voire des siècles, j'ai découvert un schéma remarquable: leur succès n'est pas attribuable à une seule innovation ou stratégie, mais à l'engagement inébranlable envers un ensemble de principes fondamentaux.",
-			ar: "الفصل الأول: أساس العظمة\n\nكل منظمة دائمة، كل إرث باق، كل نصب لإنجاز بشري يقوم على أساس. هذا الأساس ليس مبنياً من الحجر أو الفولاذ، بل من المبادئ—الحقائق الثابتة التي توجه صنع القرار وتشكل الثقافة وتحدد المصير.\n\nفي دراسة المنظمات التي ازدهرت لعقود أو حتى قرون، اكتشفت نمطاً ملحوظاً: نجاحها لا يُعزى إلى أي ابتكار أو استراتيجية واحدة، بل إلى الالتزام الثابت بمجموعة من المبادئ الأساسية.",
-			es: "Capítulo 1: La Base de la Grandeza\n\nCada organización perdurable, cada legado duradero, cada monumento al logro humano se sostiene sobre una base. Esta base no está construida de piedra o acero, sino de principios—las verdades inmutables que guían la toma de decisiones, moldean la cultura y determinan el destino.\n\nAl estudiar organizaciones que han prosperado durante décadas o incluso siglos, he descubierto un patrón notable: su éxito no se atribuye a ninguna innovación o estrategia única, sino al compromiso inquebrantable con un conjunto de principios fundamentales.",
-		},
-		cover: "/book-cover-4.jpg",
-		amazonUrl: "https://www.amazon.com",
-		year: 2017,
-	},
 ];
 
 export const meetings = [
