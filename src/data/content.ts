@@ -212,9 +212,6 @@ export const books = [
 			ar: "مقدمة: ما وراء التلاعب\n\nالتأثير ربما يكون الجانب الأكثر سوء فهم في القيادة. في الثقافة الشعبية، غالباً ما يُخلط التأثير بالتلاعب—الفن الساخر لإخضاع الآخرين لإرادة المرء من خلال الخداع أو الإكراه. لكن التأثير الحقيقي يعمل على مستوى مختلف تماماً.\n\nالتأثير الأصيل لا يتعلق بالسيطرة على الآخرين؛ إنه يتعلق بإلهامهم. لا يتعلق بفرض رؤيتك؛ إنه يتعلق بمساعدة الآخرين على اكتشاف رؤيتهم الخاصة ومواءمتها مع هدف أعظم.",
 			es: "Prefacio: Más allá de la manipulación\n\nLa influencia es quizás el aspecto más malentendido del liderazgo. En la cultura popular, la influencia a menudo se confunde con la manipulación: el arte cínico de someter a otros a la propia voluntad mediante el engaño o la coerción. Pero la verdadera influencia opera en un plano totalmente distinto.\n\nLa influencia auténtica no consiste en controlar a los demás; consiste en inspirarlos. No se trata de imponer tu visión; se trata de ayudar a otros a descubrir su propia visión y alinearla con un propósito mayor.",
 		},
-		cover: "/book-cover-3.jpg",
-		amazonUrl: "https://www.amazon.com",
-		year: 2019,
 	},
 	{
 		id: "book-4",
