@@ -78,9 +78,9 @@ const ValuePanelsSection = () => {
 	const { language } = useLanguage();
 	const copy = labels[language];
 	return (
-		<section className="relative bg-[#0a1022] text-white py-16 md:py-20 overflow-hidden">
+		<section className="relative bg-[#5c3a8a] text-white py-16 md:py-20 overflow-hidden">
 			<div
-				className="absolute inset-0 bg-gradient-to-br from-[#0d1836] via-[#0b132b] to-[#060915]"
+				className="absolute inset-0 bg-gradient-to-br from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e]"
 				aria-hidden
 			/>
 			<div className="absolute inset-0 pointer-events-none" aria-hidden>

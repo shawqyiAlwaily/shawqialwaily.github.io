@@ -9,7 +9,7 @@ const Biography = () => {
 	const { t, isRTL } = useLanguage();
 
 	return (
-		<div className="min-h-screen #2d1b47 text-white">
+		<div className="min-h-screen bg-[#5c3a8a] text-white">
 			<Header />
 
 			<main className="relative pt-28 pb-20 overflow-hidden">
@@ -27,7 +27,7 @@ const Biography = () => {
 					</Link>
 				</div>
 				<div
-					className="absolute inset-0 bg-gradient-to-b from-[#2d1b47] via-[#25193f] to-[#1a112e]"
+					className="absolute inset-0 bg-gradient-to-b from-[#5c3a8a] via-[#6b4e9b] to-[#8a6ac2]"
 					aria-hidden
 				/>
 				<div className="absolute inset-0 pointer-events-none" aria-hidden>

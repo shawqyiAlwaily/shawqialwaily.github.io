@@ -35,7 +35,7 @@ const ArticleCard = ({ cover, title, caption, link, delay }: any) => {
 		>
 			<div className="relative h-56 md:h-64 lg:h-72 overflow-hidden">
 				<img src={cover} alt={title} className="w-full h-full object-cover" />
-				<div className="absolute inset-0 bg-gradient-to-br from-[#2d1b47]/60 to-transparent" />
+				<div className="absolute inset-0 bg-gradient-to-br from-[#5c3a8a]/60 to-transparent" />
 			</div>
 
 			<div className="p-5 flex items-center justify-between">
@@ -78,10 +78,10 @@ const ArticlesSection = () => {
 		<section
 			id="articles"
 			ref={sectionRef}
-			className="relative bg-[#2d1b47] text-white py-20 md:py-24 overflow-hidden"
+			className="relative bg-[#5c3a8a] text-white py-20 md:py-24 overflow-hidden"
 		>
 			<div
-				className="absolute inset-0 bg-gradient-to-br from-[#0c1530] via-[#091025] to-[#04070f]"
+				className="absolute inset-0 bg-gradient-to-br from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e]"
 				aria-hidden
 			/>
 

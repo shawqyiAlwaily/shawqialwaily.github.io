@@ -92,7 +92,7 @@ const services: Service[] = [
 ];
 
 const gradientBg =
-	"bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(148,163,184,0.12),transparent_32%),linear-gradient(140deg,#030712,#050b17,#03060f)]";
+  "bg-[radial-gradient(circle_at_20%_20%,rgba(124,193,255,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(155,127,211,0.12),transparent_32%),linear-gradient(140deg,#4a2c6e,#5c3a8a,#7c5f9e)]";
 
 const AuthorityMetricsSection = () => {
 	const [activeId, setActiveId] = useState<string | null>(null);

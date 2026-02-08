@@ -112,11 +112,11 @@ const HeroSection = () => {
 	return (
 		<section
 			id="hero"
-			className="relative min-h-screen overflow-hidden #2d1b47 text-white"
+			className="relative min-h-screen bg-[#5c3a8a] text-white overflow-hidden"
 			onMouseMove={handleMouseMove}
 		>
 			<div className="absolute inset-0 pointer-events-none" aria-hidden>
-				<div className="absolute inset-0 bg-gradient-to-br from-[#2d1b47] via-[#0b1d3f] to-[#020712]" />
+				<div className="absolute inset-0 bg-gradient-to-br from-[#5c3a8a] via-[#0b1d3f] to-[#020712]" />
 				<div
 					className="absolute inset-0 mix-blend-screen opacity-40"
 					style={{
@@ -130,7 +130,7 @@ const HeroSection = () => {
 					className="absolute inset-0"
 				>
 					<Suspense fallback={null}>
-						<color attach="background" args={["#050816"]} />
+						<color attach="background" args={["#5c3a8a"]} />
 						<ambientLight intensity={0.35} />
 						<LightFollower mouse={mouse} />
 						<pointLight intensity={0.6} position={[0, -2, 4]} color="#58d5ff" />

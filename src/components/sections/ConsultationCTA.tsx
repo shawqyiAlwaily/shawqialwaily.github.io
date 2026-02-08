@@ -50,10 +50,10 @@ const ConsultationCTA = () => {
 	return (
 		<section
 			id="consultation"
-			className="relative bg-[#050814] text-white py-18 md:py-20 overflow-hidden"
+			className="relative bg-[#5c3a8a] text-white py-18 md:py-20 overflow-hidden"
 		>
 			<div
-				className="absolute inset-0 bg-gradient-to-b from-[#081025] via-[#050814] to-[#1a112e]"
+				className="absolute inset-0 bg-gradient-to-b from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e]"
 				aria-hidden
 			/>
 			<div className="absolute inset-0 pointer-events-none" aria-hidden>
@@ -61,7 +61,7 @@ const ConsultationCTA = () => {
 				<div className="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-emerald-200/10 blur-3xl" />
 				<div
 					className="absolute inset-0"
-					style={{ boxShadow: "inset 0 0 120px rgba(0,0,0,0.55)" }}
+					style={{ boxShadow: "inset 0 0 120px rgba(0,0,0,0.25)" }}
 				/>
 			</div>
 
@@ -83,7 +83,7 @@ const ConsultationCTA = () => {
 					<div className="flex flex-wrap justify-center gap-3 pt-2">
 						<a
 							href="mailto:shawqialwaily@outlook.com?subject=Strategic%20Consultation"
-							className="group inline-flex items-center px-6 py-3 rounded-md bg-white text-[#0b132b] font-medium shadow-lg shadow-cyan-400/15 transition-transform duration-300 hover:-translate-y-1"
+							className="group inline-flex items-center px-6 py-3 rounded-md bg-white text-[#4a2c6e] font-medium shadow-lg shadow-cyan-400/15 transition-transform duration-300 hover:-translate-y-1"
 						>
 							{text.primary}
 							<span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">

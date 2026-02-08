@@ -265,9 +265,9 @@ const BeliefBlocksSection = () => {
 	}, []);
 
 	return (
-		<section className="relative overflow-hidden #2d1b47 text-white py-24 md:py-32">
+		<section className="relative overflow-hidden bg-[#5c3a8a] text-white py-24 md:py-32">
 			<div
-				className="absolute inset-0 bg-gradient-to-b from-[#071128] via-[#050c1c] to-[#020510]"
+				className="absolute inset-0 bg-gradient-to-b from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e]"
 				aria-hidden
 			/>
 			<div

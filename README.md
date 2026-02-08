@@ -1,13 +1,15 @@
-# Exact replacements to copy-paste
-# Do a global search & replace in your project (VS Code: Ctrl+Shift+F), one at a time:
+# global search & replace (Ctrl+Shift+F in VS Code):
 
-# Find: #050816
-# Replace with: #2d1b47
-# Find: #0b1530
-# Replace with: #2d1b47
-# Find: #060b17
-# Replace with: #25193f
-# Find: #04060d
-# Replace with: #1a112e
-# Find: #070d1e (if you see it in other files)
-# Replace with: #2d1b47
+# Find: #2d1b47 (or whatever current purple you used)
+
+# Replace with: #5c3a8a (or your chosen one)
+
+# Find: #25193f (the via color)
+
+# Replace with: #6b4e9b (or slightly lighter variant like #7c5f9e)
+
+# Find: #1a112e (the to color)
+
+# Replace with: #8a6ac2 (or #9b7fd3 for even lighter end)
+
+# If you still see #050816, #0b1530, etc. anywhere — replace them too.

@@ -32,16 +32,16 @@ const Index = () => {
 			<Header />
 
 			<main>
-				<Suspense fallback={<div className="min-h-[50vh] #2d1b47" />}>
+				<Suspense fallback={<div className="min-h-[50vh] #5c3a8a" />}>
 					<HeroSection />
 				</Suspense>
 				<AuthorityMetricsSection />
 				<BeliefBlocksSection />
 				<ValuePanelsSection />
-				<Suspense fallback={<div className="min-h-[60vh] bg-[#2d1b47]" />}>
+				<Suspense fallback={<div className="min-h-[60vh] bg-[#5c3a8a]" />}>
 					<BooksSection />
 				</Suspense>
-				<Suspense fallback={<div className="min-h-[60vh] bg-[#2d1b47]" />}>
+				<Suspense fallback={<div className="min-h-[60vh] bg-[#5c3a8a]" />}>
 					<ArticlesSection />
 				</Suspense>
 				<ConsultationCTA />
