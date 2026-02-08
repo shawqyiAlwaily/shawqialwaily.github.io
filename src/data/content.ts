@@ -224,6 +224,7 @@ export const articles = [
 		},
 		cover: "/article-cover-1.jpg",
 		date: "2024-07-01",
+		videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 	},
 	{
 		id: "article-2",
@@ -254,6 +255,7 @@ export const articles = [
 		},
 		cover: "/article-cover-2.jpg",
 		date: "2023-11-15",
+		videoUrl: "https://www.tiktok.com/@shawqi/video/1234567890123456789",
 	},
 ];
 
