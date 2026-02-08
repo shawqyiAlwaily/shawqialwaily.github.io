@@ -105,7 +105,7 @@ const BookCard = ({
 					onPointerEnter={() => setHovered(true)}
 					onPointerLeave={() => setHovered(false)}
 				>
-					<color attach="background" args={["#5c3a8a"]} />
+					<color attach="background" args={["#0a1224"]} />
 					<ambientLight intensity={0.45} />
 					<directionalLight
 						intensity={1.2}
@@ -123,7 +123,7 @@ const BookCard = ({
 						<Environment preset="city" />
 					</Suspense>
 				</Canvas>
-				<div className="absolute inset-0 bg-gradient-to-br from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e]" />
+				<div className="absolute inset-0 bg-gradient-to-br from-[#2d1b47]/70 via-transparent to-[#2d1b47]/50" />
 			</div>
 			<div className="relative p-6 flex items-center justify-between">
 				<div>
@@ -168,15 +168,15 @@ const BooksSection = () => {
 		<section
 			id="books"
 			ref={sectionRef}
-			className="relative bg-[#5c3a8a] text-white py-24 md:py-28 overflow-hidden"
+			className="relative bg-[#2d1b47] text-white py-24 md:py-28 overflow-hidden"
 		>
 			<div
-				className="absolute inset-0 bg-gradient-to-br from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e]"
+				className="absolute inset-0 bg-gradient-to-br from-[#2d1b47] via-[#3a1e5c] to-[#5c3a8a]"
 				aria-hidden
 			/>
 			<div className="absolute inset-0 pointer-events-none" aria-hidden>
-				<div className="absolute -left-32 -top-32 w-80 h-80 rounded-full bg-purple-400/10 blur-3xl" />
-				<div className="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-violet-300/10 blur-3xl" />
+				<div className="absolute -left-32 -top-32 w-80 h-80 rounded-full bg-cyan-400/10 blur-3xl" />
+				<div className="absolute right-0 bottom-0 w-96 h-96 rounded-full bg-emerald-300/10 blur-3xl" />
 			</div>
 
 			<div className="relative container mx-auto px-6 md:px-10">
