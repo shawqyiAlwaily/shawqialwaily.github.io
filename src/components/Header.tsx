@@ -10,6 +10,7 @@ import {
 	Mail,
 	Twitter,
 	Facebook,
+	BookOpen,
 } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { personalInfo } from "@/data/content";
@@ -58,7 +59,7 @@ const Header = () => {
 	const navItems = [
 		{ href: "/", label: t("nav.home") },
 		{ href: "/biography", label: t("nav.biography") },
-		{ href: "/work", label: t("nav.articles") },
+		{ href: "/articles", label: t("nav.articles") },
 		{ href: "/books", label: t("nav.books") },
 	];
 
@@ -175,15 +176,25 @@ const Header = () => {
 													<span className="text-white">Facebook</span>
 												</a>
 
-												<a
-													href="https://www.linkedin.com/in/shawqi-alwaily-886744111/"
-													target="_blank"
-													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
-												>
-													<Linkedin className="w-5 h-5 text-white" />
-													<span className="text-white">LinkedIn</span>
-												</a>
+													<a
+														href={personalInfo.socialLinks.linkedin}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+													>
+														<Linkedin className="w-5 h-5 text-white" />
+														<span className="text-white">LinkedIn</span>
+													</a>
+
+													<a
+														href={personalInfo.socialLinks.academia}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+													>
+														<BookOpen className="w-5 h-5 text-white" />
+														<span className="text-white">Academia</span>
+													</a>
 											</div>
 										</div>
 

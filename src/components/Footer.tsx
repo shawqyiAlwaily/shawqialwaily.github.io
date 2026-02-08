@@ -6,6 +6,7 @@ import {
 	Phone,
 	Mail,
 	Facebook,
+	BookOpen,
 } from "lucide-react";
 
 const Footer = () => {
@@ -33,13 +34,18 @@ const Footer = () => {
 		},
 		{
 			icon: Linkedin,
-			url: "https://www.linkedin.com/in/shawqi-alwaily-886744111/",
+			url: personalInfo.socialLinks.linkedin,
 			label: "LinkedIn",
 		},
 		{
 			icon: Facebook,
 			url: "https://www.facebook.com/shawki.mohammed.1",
 			label: "Facebook",
+		},
+		{
+			icon: BookOpen,
+			url: personalInfo.socialLinks.academia,
+			label: "Academia",
 		},
 	];
 

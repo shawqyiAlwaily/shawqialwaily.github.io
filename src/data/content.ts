@@ -6,6 +6,7 @@ export const personalInfo = {
 		linkedin: "https://linkedin.com",
 		youtube: "https://youtube.com",
 		instagram: "https://instagram.com",
+		academia: "https://independent.academia.edu/shawkyAbdelgayed",
 	},
 };
 
@@ -190,6 +191,69 @@ export const books = [
 		cover: "/book-cover-2.jpg",
 		amazonUrl: "https://www.amazon.com/dp/B0FVM4K7N2",
 		year: 2021,
+	},
+];
+
+export const articles = [
+	{
+		id: "article-1",
+		slug: "strategic-insights",
+		title: {
+			en: "Strategic Insights: Leading with Vision",
+			fr: "Perspectives Stratégiques : Diriger avec Vision",
+			ar: "أفكار استراتيجية: القيادة برؤية",
+			es: "Perspectivas Estratégicas: Liderar con Visión",
+		},
+		caption: {
+			en: "A short reflection on modern strategic leadership.",
+			fr: "Une brève réflexion sur le leadership stratégique moderne.",
+			ar: "تأمل قصير في القيادة الاستراتيجية المعاصرة.",
+			es: "Una breve reflexión sobre el liderazgo estratégico moderno.",
+		},
+		description: {
+			en: "This article explores practical frameworks and case studies for leaders who want to translate long-term vision into concrete action.",
+			fr: "Cet article explore des cadres pratiques et des études de cas pour les dirigeants souhaitant traduire une vision à long terme en actions concrètes.",
+			ar: "يستعرض هذا المقال أطرًا عملية ودراسات حالة للقادة الذين يريدون تحويل الرؤية طويلة الأمد إلى عمل ملموس.",
+			es: "Este artículo explora marcos prácticos y estudios de caso para líderes que desean traducir la visión a largo plazo en acción concreta.",
+		},
+		excerpt: {
+			en: "Practical frameworks for translating vision into action.",
+			fr: "Des cadres pratiques pour traduire la vision en action.",
+			ar: "أطر عملية لتحويل الرؤية إلى فعل.",
+			es: "Marcos prácticos para traducir la visión en acción.",
+		},
+		cover: "/article-cover-1.jpg",
+		date: "2024-07-01",
+	},
+	{
+		id: "article-2",
+		slug: "resilience-and-change",
+		title: {
+			en: "Resilience and Change",
+			fr: "Résilience et Changement",
+			ar: "المرونة والتغيير",
+			es: "Resiliencia y Cambio",
+		},
+		caption: {
+			en: "Adapting organizations for turbulent times.",
+			fr: "Adapter les organisations aux temps turbulents.",
+			ar: "تهيئة المنظمات للأوقات العاصفة.",
+			es: "Adaptar las organizaciones para tiempos turbulentos.",
+		},
+		description: {
+			en: "An overview of interventions and cultural shifts that build organizational resilience.",
+			fr: "Un aperçu des interventions et changements culturels qui renforcent la résilience organisationnelle.",
+			ar: "نظرة عامة على التدخلات والتحولات الثقافية التي تبني مرونة المؤسسة.",
+			es: "Una visión general de intervenciones y cambios culturales que construyen la resiliencia organizacional.",
+		},
+		excerpt: {
+			en: "How organizations withstand shocks and pivot effectively.",
+			fr: "Comment les organisations résistent aux chocs et pivôtent efficacement.",
+			ar: "كيف تتحمل المؤسسات الصدمات وتتحول بفعالية.",
+			es: "Cómo las organizaciones resisten los shocks y pivotan eficazmente.",
+		},
+		cover: "/article-cover-2.jpg",
+		date: "2023-11-15",
 	},
 ];
 

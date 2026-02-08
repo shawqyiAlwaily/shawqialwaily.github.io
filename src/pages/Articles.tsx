@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BooksSection from "@/components/sections/BooksSection";
+import ArticlesSection from "@/components/sections/ArticlesSection";
 import { Link } from "react-router-dom";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const Books = () => {
+const Articles = () => {
 	const { t, isRTL } = useLanguage();
 
 	return (
@@ -14,7 +14,7 @@ const Books = () => {
 			<main className="pt-24">
 				<div className="container mx-auto px-4 md:px-8 py-6">
 					<Link
-						to="/#books"
+						to="/#articles"
 						className={`inline-flex items-center gap-2 text-cyan-200 hover:text-white transition-colors mb-4 ${isRTL ? "flex-row-reverse" : ""}`}
 					>
 						{isRTL ? (
@@ -22,15 +22,15 @@ const Books = () => {
 						) : (
 							<ArrowLeft className="w-5 h-5" />
 						)}
-						<span className="font-medium">{t("books.backToBooks")}</span>
+						<span className="font-medium">{t("articles.backToArticles")}</span>
 					</Link>
 				</div>
 
-				<BooksSection />
+				<ArticlesSection />
 			</main>
 			<Footer />
 		</div>
 	);
 };
 
-export default Books;
+export default Articles;

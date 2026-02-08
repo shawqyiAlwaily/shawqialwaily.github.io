@@ -35,6 +35,7 @@ const translations = {
 		// Biography
 		"bio.title": "Biography",
 		"bio.subtitle": "A Life Dedicated to Excellence",
+		"bio.backToHome": "Back to Home",
 		"bio.content1":
 			"Shawqi Al-Waily is a distinguished researcher and seasoned politician currently serving at the African Union Commission.",
 		"bio.content2":
@@ -54,6 +55,10 @@ const translations = {
 
 		// Books
 		"books.title": "Published Works",
+		// Articles
+		"articles.title": "Articles",
+		"articles.subtitle": "Short essays & insights",
+		"articles.backToArticles": "Back to Articles",
 		"books.subtitle": "Wisdom in Pages",
 		"books.viewDetails": "View Details",
 		"books.buyNow": "Buy on Amazon",
@@ -88,6 +93,7 @@ const translations = {
 		// Biography
 		"bio.title": "Biographie",
 		"bio.subtitle": "Une Vie Dédiée à l'Excellence",
+		"bio.backToHome": "Retour à l'accueil",
 		"bio.content1":
 			"Shawqi Al-Waily est un chercheur distingué et un politicien chevronné actuellement en poste à la Commission de l'Union Africaine.",
 		"bio.content2":
@@ -107,6 +113,10 @@ const translations = {
 
 		// Books
 		"books.title": "Œuvres Publiées",
+		// Articles
+		"articles.title": "Articles",
+		"articles.subtitle": "Brefs essais & idées",
+		"articles.backToArticles": "Retour aux Articles",
 		"books.subtitle": "La Sagesse en Pages",
 		"books.viewDetails": "Voir les Détails",
 		"books.buyNow": "Acheter sur Amazon",
@@ -140,6 +150,7 @@ const translations = {
 		// Biography
 		"bio.title": "السيرة الذاتية",
 		"bio.subtitle": "حياة مكرسة للتميز",
+		"bio.backToHome": "العودة إلى الصفحة الرئيسية",
 		"bio.content1":
 			"شوقي الوائلي باحث متميز وسياسي محنك يعمل حالياً في مفوضية الاتحاد الأفريقي.",
 		"bio.content2":
@@ -159,6 +170,10 @@ const translations = {
 
 		// Books
 		"books.title": "الأعمال المنشورة",
+		// Articles
+		"articles.title": "المقالات",
+		"articles.subtitle": "مقالات قصيرة وأفكار",
+		"articles.backToArticles": "العودة إلى المقالات",
 		"books.subtitle": "الحكمة في صفحات",
 		"books.viewDetails": "عرض التفاصيل",
 		"books.buyNow": "اشترِ من أمازون",
@@ -193,6 +208,7 @@ const translations = {
 		// Biography
 		"bio.title": "Biografía",
 		"bio.subtitle": "Una vida dedicada a la excelencia",
+		"bio.backToHome": "Volver al inicio",
 		"bio.content1":
 			"Shawqi Al-Waily es un investigador distinguido y un político con servicio en la Comisión de la Unión Africana.",
 		"bio.content2":
@@ -212,6 +228,10 @@ const translations = {
 
 		// Books
 		"books.title": "Obras publicadas",
+		// Articles
+		"articles.title": "Artículos",
+		"articles.subtitle": "Ensayos breves y reflexiones",
+		"articles.backToArticles": "Volver a los artículos",
 		"books.subtitle": "Sabiduría en páginas",
 		"books.viewDetails": "Ver detalles",
 		"books.buyNow": "Comprar en Amazon",

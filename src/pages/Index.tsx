@@ -7,6 +7,9 @@ import ValuePanelsSection from "@/components/sections/ValuePanelsSection";
 import ConsultationCTA from "@/components/sections/ConsultationCTA";
 const HeroSection = lazy(() => import("@/components/sections/HeroSection"));
 const BooksSection = lazy(() => import("@/components/sections/BooksSection"));
+const ArticlesSection = lazy(
+	() => import("@/components/sections/ArticlesSection"),
+);
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -37,6 +40,9 @@ const Index = () => {
 				<ValuePanelsSection />
 				<Suspense fallback={<div className="min-h-[60vh] bg-[#070d1e]" />}>
 					<BooksSection />
+				</Suspense>
+				<Suspense fallback={<div className="min-h-[60vh] bg-[#070d1e]" />}>
+					<ArticlesSection />
 				</Suspense>
 				<ConsultationCTA />
 			</main>

@@ -1,13 +1,31 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { personalInfo } from "@/data/content";
+import { Link } from "react-router-dom";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Biography = () => {
+	const { t, isRTL } = useLanguage();
+
 	return (
 		<div className="min-h-screen bg-[#050816] text-white">
 			<Header />
 
 			<main className="relative pt-28 pb-20 overflow-hidden">
+				<div className="container mx-auto px-4 md:px-8 py-6">
+					<Link
+						to="/#biography"
+						className={`inline-flex items-center gap-2 text-cyan-200 hover:text-white transition-colors mb-4 ${isRTL ? "flex-row-reverse" : ""}`}
+					>
+						{isRTL ? (
+							<ArrowRight className="w-5 h-5" />
+						) : (
+							<ArrowLeft className="w-5 h-5" />
+						)}
+						<span className="font-medium">{t("bio.backToHome")}</span>
+					</Link>
+				</div>
 				<div
 					className="absolute inset-0 bg-gradient-to-b from-[#0b1530] via-[#060b17] to-[#04060d]"
 					aria-hidden
