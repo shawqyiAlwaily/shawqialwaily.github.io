@@ -176,25 +176,25 @@ const Header = () => {
 													<span className="text-white">Facebook</span>
 												</a>
 
-													<a
-														href={personalInfo.socialLinks.linkedin}
-														target="_blank"
-														rel="noopener noreferrer"
-														className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
-													>
-														<Linkedin className="w-5 h-5 text-white" />
-														<span className="text-white">LinkedIn</span>
-													</a>
+												<a
+													href={personalInfo.socialLinks.linkedin}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+												>
+													<Linkedin className="w-5 h-5 text-white" />
+													<span className="text-white">LinkedIn</span>
+												</a>
 
-													<a
-														href={personalInfo.socialLinks.academia}
-														target="_blank"
-														rel="noopener noreferrer"
-														className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
-													>
-														<BookOpen className="w-5 h-5 text-white" />
-														<span className="text-white">Academia</span>
-													</a>
+												<a
+													href={personalInfo.socialLinks.academia}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+												>
+													<BookOpen className="w-5 h-5 text-white" />
+													<span className="text-white">Academia</span>
+												</a>
 											</div>
 										</div>
 
