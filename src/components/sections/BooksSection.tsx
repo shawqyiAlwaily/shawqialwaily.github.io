@@ -53,12 +53,12 @@ const BookMesh = ({ cover, hovered }: { cover: string; hovered: boolean }) => {
 		meshRef.current.rotation.y = MathUtils.lerp(
 			meshRef.current.rotation.y,
 			targetRot,
-			delta * 3
+			delta * 3,
 		);
 		meshRef.current.position.y = MathUtils.lerp(
 			meshRef.current.position.y,
 			targetLift,
-			delta * 3
+			delta * 3,
 		);
 	});
 
@@ -123,7 +123,7 @@ const BookCard = ({
 						<Environment preset="city" />
 					</Suspense>
 				</Canvas>
-				<div className="absolute inset-0 bg-gradient-to-br from-[#0b1530]/70 via-transparent to-[#0b1530]/50" />
+				<div className="absolute inset-0 bg-gradient-to-br from-[#2d1b47]/70 via-transparent to-[#2d1b47]/50" />
 			</div>
 			<div className="relative p-6 flex items-center justify-between">
 				<div>
@@ -155,7 +155,7 @@ const BooksSection = () => {
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => setVisible(entry.isIntersecting),
-			{ threshold: 0.2 }
+			{ threshold: 0.2 },
 		);
 		if (sectionRef.current) observer.observe(sectionRef.current);
 		return () => observer.disconnect();
@@ -168,7 +168,7 @@ const BooksSection = () => {
 		<section
 			id="books"
 			ref={sectionRef}
-			className="relative bg-[#070d1e] text-white py-24 md:py-28 overflow-hidden"
+			className="relative bg-[#2d1b47] text-white py-24 md:py-28 overflow-hidden"
 		>
 			<div
 				className="absolute inset-0 bg-gradient-to-br from-[#0c1530] via-[#091025] to-[#04070f]"

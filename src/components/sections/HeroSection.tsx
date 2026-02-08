@@ -112,11 +112,11 @@ const HeroSection = () => {
 	return (
 		<section
 			id="hero"
-			className="relative min-h-screen overflow-hidden bg-[#050816] text-white"
+			className="relative min-h-screen overflow-hidden #2d1b47 text-white"
 			onMouseMove={handleMouseMove}
 		>
 			<div className="absolute inset-0 pointer-events-none" aria-hidden>
-				<div className="absolute inset-0 bg-gradient-to-br from-[#0b1530] via-[#0b1d3f] to-[#020712]" />
+				<div className="absolute inset-0 bg-gradient-to-br from-[#2d1b47] via-[#0b1d3f] to-[#020712]" />
 				<div
 					className="absolute inset-0 mix-blend-screen opacity-40"
 					style={{

@@ -53,7 +53,7 @@ const ConsultationCTA = () => {
 			className="relative bg-[#050814] text-white py-18 md:py-20 overflow-hidden"
 		>
 			<div
-				className="absolute inset-0 bg-gradient-to-b from-[#081025] via-[#050814] to-[#04060d]"
+				className="absolute inset-0 bg-gradient-to-b from-[#081025] via-[#050814] to-[#1a112e]"
 				aria-hidden
 			/>
 			<div className="absolute inset-0 pointer-events-none" aria-hidden>

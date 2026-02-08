@@ -52,9 +52,9 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className="relative overflow-hidden bg-[#050816] text-white">
+		<footer className="relative overflow-hidden #2d1b47 text-white">
 			<div
-				className="absolute inset-0 bg-gradient-to-b from-[#0b1530] via-[#080f24] to-[#04060d]"
+				className="absolute inset-0 bg-gradient-to-b from-[#2d1b47] via-[#080f24] to-[#1a112e]"
 				aria-hidden
 			/>
 			<div className="absolute inset-0 pointer-events-none" aria-hidden>

@@ -37,13 +37,13 @@ const ArticleDetail = () => {
 	}
 
 	return (
-		<div className="min-h-screen bg-[#050816] text-white">
+		<div className="min-h-screen #2d1b47 text-white">
 			<Header />
 
 			<main className="relative pt-24 overflow-hidden">
 				<section className="relative py-16 md:py-24 overflow-hidden">
 					<div
-						className="absolute inset-0 bg-gradient-to-b from-[#0b1530] via-[#060b17] to-[#04060d]"
+						className="absolute inset-0 bg-gradient-to-b from-[#2d1b47] via-[#25193f] to-[#1a112e]"
 						aria-hidden
 					/>
 					<div className="relative container mx-auto px-4 md:px-8">

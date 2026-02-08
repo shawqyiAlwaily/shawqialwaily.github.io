@@ -27,11 +27,11 @@ const WorkDetail = () => {
 
 	if (!item) {
 		return (
-			<div className="min-h-screen bg-[#050816] text-white">
+			<div className="min-h-screen #2d1b47 text-white">
 				<Header />
 				<main className="relative pt-24 flex items-center justify-center overflow-hidden">
 					<div
-						className="absolute inset-0 bg-gradient-to-b from-[#0b1530] via-[#060b17] to-[#04060d]"
+						className="absolute inset-0 bg-gradient-to-b from-[#2d1b47] via-[#25193f] to-[#1a112e]"
 						aria-hidden
 					/>
 					<div className="relative text-center p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg shadow-cyan-500/15">
@@ -50,11 +50,11 @@ const WorkDetail = () => {
 	}
 
 	return (
-		<div className="min-h-screen bg-[#050816] text-white">
+		<div className="min-h-screen #2d1b47 text-white">
 			<Header />
 			<main className="relative pt-24 pb-16 overflow-hidden">
 				<div
-					className="absolute inset-0 bg-gradient-to-b from-[#0b1530] via-[#060b17] to-[#04060d]"
+					className="absolute inset-0 bg-gradient-to-b from-[#2d1b47] via-[#25193f] to-[#1a112e]"
 					aria-hidden
 				/>
 				<div className="absolute inset-0 pointer-events-none" aria-hidden>
