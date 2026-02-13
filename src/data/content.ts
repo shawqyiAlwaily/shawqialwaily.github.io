@@ -197,6 +197,110 @@ export const books = [
 export const articles = [
 	{
 		id: "article-1",
+		slug: "resilience-and-change",
+		title: {
+			en: "Resilience and Change",
+			fr: "Résilience et Changement",
+			ar: "المرونة والتغيير",
+			es: "Resiliencia y Cambio",
+		},
+		caption: {
+			en: "Adapting organizations for turbulent times.",
+			fr: "Adapter les organisations aux temps turbulents.",
+			ar: "تهيئة المنظمات للأوقات العاصفة.",
+			es: "Adaptar las organizaciones para tiempos turbulentos.",
+		},
+		description: {
+			en: "An overview of interventions and cultural shifts that build organizational resilience.",
+			fr: "Un aperçu des interventions et changements culturels qui renforcent la résilience organisationnelle.",
+			ar: "نظرة عامة على التدخلات والتحولات الثقافية التي تبني مرونة المؤسسة.",
+			es: "Una visión general de intervenciones y cambios culturales que construyen la resiliencia organizacional.",
+		},
+		excerpt: {
+			en: "How organizations withstand shocks and pivot effectively.",
+			fr: "Comment les organisations résistent aux chocs et pivôtent efficacement.",
+			ar: "كيف تتحمل المؤ스ات الصدمات وتتحول بفعالية.",
+			es: "Cómo las organizaciones resisten los shocks y pivotan eficazmente.",
+		},
+		cover: "/images/articles/resilience-and-change/cover.jpg",
+		date: "2023-11-15",
+		videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
+		content: {
+			en: `# Resilience and Change
+
+Organizational resilience isn't about bouncing back—it's about bouncing forward.
+
+![Organizational resilience model](/images/articles/resilienceGraph.jpg)
+
+## The Four Pillars of Resilience
+
+1. **Anticipatory** – The ability to detect threats before they materialize
+2. **Adaptive** – The capacity to adjust quickly to new conditions
+3. **Recovery** – The speed at which you can restore operations
+4. **Growth** – The ability to emerge stronger from adversity
+
+## Building a Resilient Culture
+
+Resilience isn't something you can buy; it must be cultivated. Here are five interventions that work:
+
+### 1. Psychological Safety
+
+Teams that feel safe to speak up identify problems 70% faster and solve them 50% more effectively.
+
+### 2. Distributed Decision-Making
+
+Empower people closest to the work to make decisions. During COVID-19, companies with decentralized authority adapted 3x faster than centralized peers.
+
+### 3. Redundancy with Purpose
+
+Not duplication—intelligent redundancy. Cross-train people, diversify suppliers, and maintain strategic reserves.
+
+### 4. Learning Systems
+
+Every failure is data. Create mechanisms to capture, share, and act on lessons learned.
+
+### 5. Purpose Anchoring
+
+Purpose is the ultimate resilience mechanism. When people know why they're doing the work, they find a way through any obstacle.
+
+## Case Study: Supply Chain Transformation
+
+A global manufacturer faced cascading disruptions in 2020-2021: factory closures, port congestion, semiconductor shortages. Rather than simply firefighting, they used the crisis to fundamentally redesign their supply chain.
+
+| Before | After |
+|--------|-------|
+| Single-source suppliers | Multi-source with geographic diversity |
+| Just-in-time inventory | Strategic buffer stocks |
+| Reactive planning | Predictive analytics |
+| Siloed procurement | Cross-functional resilience teams |
+
+> "It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change." – Charles Darwin
+
+## Practical Implementation
+
+Start small. Pick one business unit or function and run a resilience pilot:
+
+1. **Map critical dependencies** – What would break if X happened?
+2. **Identify single points of failure** – People, systems, suppliers
+3. **Develop contingency plans** – What will you do when (not if)?
+4. **Test through simulation** – Tabletop exercises reveal gaps
+
+## Conclusion
+
+Resilience is becoming the defining competitive advantage of our era. Organizations that invest in anticipatory capabilities, adaptive capacity, and learning systems won't just survive disruption—they'll lead through it.`,
+			fr: `# Résilience et Changement
+
+[French content here]`,
+			ar: `# المرونة والتغيير
+
+[Arabic content here]`,
+			es: `# Resiliencia y Cambio
+
+[Spanish content here]`,
+		},
+	},
+	{
+		id: "article-2",
 		slug: "strategic-insights",
 		title: {
 			en: "Strategic Insights: Leading with Vision",
@@ -222,40 +326,195 @@ export const articles = [
 			ar: "أطر عملية لتحويل الرؤية إلى فعل.",
 			es: "Marcos prácticos para traducir la visión en acción.",
 		},
-		cover: "/article-cover-1.jpg",
+		cover: "/images/articles/strategic-insights/cover.jpg",
 		date: "2024-07-01",
 		videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+		content: {
+			en: `# Leading with Vision
+
+In today's volatile environment, vision is not a luxury—it's a necessity.
+
+![Strategic planning graph](/images/articles/strategic-insights/strategy-graph.png)
+
+## The Framework
+
+1. **Sense-making** – Understand the external signals. Leaders must constantly scan the horizon for emerging trends, competitive threats, and shifting customer expectations.
+2. **Direction-setting** – Define a clear, compelling future. This isn't just about goals; it's about painting a picture of what success looks like that inspires action.
+3. **Alignment** – Mobilize the organization around the vision. Every system, process, and person must be oriented toward the same North Star.
+
+## Case Study: Transforming a Legacy Organization
+
+When Maria took over as CEO of a 100-year-old manufacturing company, the leadership team was fragmented and the strategy was unclear. Through a series of vision workshops and strategic offsites, she:
+
+- **Conducted 50+ stakeholder interviews** to understand market dynamics
+- **Developed a clear 5-year vision** with measurable milestones
+- **Aligned executive incentives** to collaborative goals rather than siloed metrics
+
+The result? Within 18 months, the company launched three new product lines, employee engagement scores rose 40%, and market share increased by 12%.
+
+> "Vision without execution is hallucination." – Thomas Edison
+
+## Practical Frameworks for Leaders
+
+### The Vision Cascade
+
+\`\`\`
+Corporate Vision → Business Unit Strategy → Team Objectives → Individual Goals
+\`\`\`
+
+This cascade ensures that every level of the organization understands how their work connects to the bigger picture.
+
+### The 3 Horizons Model
+
+- **Horizon 1** (0-12 months): Optimize current business
+- **Horizon 2** (1-3 years): Build emerging businesses
+- **Horizon 3** (3-5+ years): Create viable options for the future
+
+## Conclusion
+
+Leading with vision requires both imagination and execution discipline. The leaders who succeed are those who can hold the tension between the aspirational and the operational—dreaming big while sweating the small stuff.
+
+---
+
+*This article is part of our series on strategic leadership. For more insights, watch the accompanying video below.*`,
+			fr: `# Diriger avec Vision
+
+[French content here]`,
+			ar: `# القيادة برؤية
+
+[Arabic content here]`,
+			es: `# Liderar con Visión
+
+[Spanish content here]`,
+		},
 	},
+];
+// Replace your existing events array with this consolidated version
+
+export const events = [
 	{
-		id: "article-2",
-		slug: "resilience-and-change",
+		id: "event-1",
+		slug: "meeting-with-auc-chairperson-beijing",
 		title: {
-			en: "Resilience and Change",
-			fr: "Résilience et Changement",
-			ar: "المرونة والتغيير",
-			es: "Resiliencia y Cambio",
+			en: "Meeting with H.E. Mahmoud Ali Yousef, Chairperson of the African Union Commission",
+			fr: "Rencontre avec S.E. Mahmoud Ali Yousef, Président de la Commission de l'Union africaine",
+			ar: "لقاء مع سعادة محمود علي يوسف، رئيس مفوضية الاتحاد الأفريقي",
+			es: "Reunión con S.E. Mahmoud Ali Yousef, Presidente de la Comisión de la Unión Africana",
 		},
 		caption: {
-			en: "Adapting organizations for turbulent times.",
-			fr: "Adapter les organisations aux temps turbulents.",
-			ar: "تهيئة المنظمات للأوقات العاصفة.",
-			es: "Adaptar las organizaciones para tiempos turbulentos.",
+			en: "Strategic discussions on AU–China cooperation",
+			fr: "Discussions stratégiques sur la coopération UA-Chine",
+			ar: "مناقشات استراتيجية حول التعاون بين الاتحاد الأفريقي والصين",
+			es: "Discusiones estratégicas sobre la cooperación UA-China",
 		},
 		description: {
-			en: "An overview of interventions and cultural shifts that build organizational resilience.",
-			fr: "Un aperçu des interventions et changements culturels qui renforcent la résilience organisationnelle.",
-			ar: "نظرة عامة على التدخلات والتحولات الثقافية التي تبني مرونة المؤسسة.",
-			es: "Una visión general de intervenciones y cambios culturales que construyen la resiliencia organizacional.",
+			en: "Engaged with H.E. Mahmoud Ali Yousef, Chairperson of the AUC, during a high‑level diplomatic visit to Beijing. The meeting focused on strengthening continental strategic partnerships and advancing shared development goals.",
+			fr: "Rencontre avec S.E. Mahmoud Ali Yousef, Président de la CUA, lors d'une visite diplomatique de haut niveau à Pékin. Les échanges ont porté sur le renforcement des partenariats stratégiques continentaux et la poursuite d'objectifs de développement communs.",
+			ar: "التقى مع سعادة محمود علي يوسف، رئيس مفوضية الاتحاد الأفريقي، خلال زيارة دبلوماسية رفيعة المستوى إلى بكين. تركزت المناقشات على تعزيز الشراكات الاستراتيجية القارية وتحقيق أهداف التنمية المشتركة.",
+			es: "Se reunió con S.E. Mahmoud Ali Yousef, Presidente de la CUA, durante una visita diplomática de alto nivel a Pekín. Las conversaciones se centraron en fortalecer las alianzas estratégicas continentales y avanzar en objetivos de desarrollo compartidos.",
 		},
-		excerpt: {
-			en: "How organizations withstand shocks and pivot effectively.",
-			fr: "Comment les organisations résistent aux chocs et pivôtent efficacement.",
-			ar: "كيف تتحمل المؤسسات الصدمات وتتحول بفعالية.",
-			es: "Cómo las organizaciones resisten los shocks y pivotan eficazmente.",
+		cover: "/images/events/event1.jpg",
+		date: "2025-07-20",
+		location: {
+			en: "Beijing, China",
+			fr: "Pékin, Chine",
+			ar: "بكين، الصين",
+			es: "Pekín, China",
 		},
-		cover: "/article-cover-2.jpg",
-		date: "2023-11-15",
-		videoUrl: "https://www.tiktok.com/@shawqi/video/1234567890123456789",
+		images: [],
+	},
+	{
+		id: "event-2",
+		slug: "closing-celebration-beijing-training",
+		title: {
+			en: "Closing Celebration – Diplomatic Training Program",
+			fr: "Célébration de clôture – Programme de formation diplomatique",
+			ar: "احتفال ختامي – برنامج التدريب الدبلوماسي",
+			es: "Celebración de clausura – Programa de formación diplomática",
+		},
+		caption: {
+			en: "Closing celebration during a training in Beijing, China",
+			fr: "Célébration de clôture lors d'une formation à Pékin, Chine",
+			ar: "احتفال ختامي خلال تدريب في بكين، الصين",
+			es: "Celebración de clausura durante una formación en Pekín, China",
+		},
+		description: {
+			en: "Participated in the closing ceremony of an intensive diplomatic training program held in Beijing. The event gathered African and Chinese officials to reflect on mutual learning and future collaboration under the FOCAC framework.",
+			fr: "Participation à la cérémonie de clôture d'un programme de formation diplomatique intensif à Pékin. L'événement a réuni des responsables africains et chinois pour échanger sur les enseignements mutuels et la future collaboration dans le cadre du FOCAC.",
+			ar: "شارك في حفل اختتام برنامج تدريب دبلوماسي مكثف عقد في بكين. جمع الحدث مسؤولين أفارقة وصينيين للتباحث حول التعلم المتبادل والتعاون المستقبلي في إطار منتدى التعاون الصيني الأفريقي.",
+			es: "Participó en la ceremonia de clausura de un programa intensivo de formación diplomática celebrado en Pekín. El evento reunió a funcionarios africanos y chinos para reflexionar sobre el aprendizaje mutuo y la futura colaboración en el marco del FOCAC.",
+		},
+		cover: "/images/events/event2.jpg",
+		date: "2025-07-25",
+		location: {
+			en: "Beijing, China",
+			fr: "Pékin, Chine",
+			ar: "بكين، الصين",
+			es: "Pekín, China",
+		},
+		images: [],
+	},
+	{
+		id: "event-3",
+		slug: "au-eu-summit-luanda-woinshet",
+		title: {
+			en: "AU–EU Summit with Ambassador Woinshet",
+			fr: "Sommet UA-UE avec l'Ambassadrice Woinshet",
+			ar: "قمة الاتحاد الأفريقي والاتحاد الأوروبي مع السفيرة وونشيت",
+			es: "Cumbre UA-UE con la Embajadora Woinshet",
+		},
+		caption: {
+			en: "Advisor to the AU during the AU–EU Summit in Luanda, Angola",
+			fr: "Conseiller de l'UA lors du Sommet UA-UE à Luanda, Angola",
+			ar: "مستشار الاتحاد الأفريقي خلال قمة الاتحاد الأفريقي والاتحاد الأوروبي في لواندا، أنغولا",
+			es: "Asesor de la UA durante la Cumbre UA-UE en Luanda, Angola",
+		},
+		description: {
+			en: "Served as strategic advisor alongside Ambassador Woinshet at the AU–EU Summit in Luanda. Contributed to high‑level dialogues on peace, security, and sustainable investment partnerships between Africa and Europe.",
+			fr: "A exercé les fonctions de conseiller stratégique aux côtés de l'Ambassadrice Woinshet lors du Sommet UA-UE à Luanda. A contribué aux dialogues de haut niveau sur la paix, la sécurité et les partenariats d'investissement durable entre l'Afrique et l'Europe.",
+			ar: "عمل كمستشار استراتيجي إلى جانب السفيرة وونشيت في قمة الاتحاد الأفريقي والاتحاد الأوروبي في لواندا. ساهم في الحوارات رفيعة المستوى حول السلام والأمن وشراكات الاستثمار المستدام بين أفريقيا وأوروبا.",
+			es: "Se desempeñó como asesor estratégico junto a la Embajadora Woinshet en la Cumbre UA-UE en Luanda. Contribuyó a los diálogos de alto nivel sobre paz, seguridad y alianzas de inversión sostenible entre África y Europa.",
+		},
+		cover: "/images/events/event3.jpg",
+		date: "2025-11-24",
+		location: {
+			en: "Luanda, Angola",
+			fr: "Luanda, Angola",
+			ar: "لواندا، أنغولا",
+			es: "Luanda, Angola",
+		},
+		images: [], // Fixed: removed the extra bracket
+	},
+	{
+		id: "event-4",
+		slug: "reception-chinese-ambassador-jiang-feng",
+		title: {
+			en: "End‑of‑Year Reception with Ambassador Jiang Feng",
+			fr: "Réception de fin d'année avec l'Ambassadeur Jiang Feng",
+			ar: "استقبال نهاية العام مع السفير جيانغ فنغ",
+			es: "Recepción de fin de año con el Embajador Jiang Feng",
+		},
+		caption: {
+			en: "Ambassador of China to the AU – hosted by the Mission of the PRC to the African Union",
+			fr: "Ambassadeur de Chine auprès de l'UA – organisé par la Mission de la RPC auprès de l'Union africaine",
+			ar: "سفير الصين لدى الاتحاد الأفريقي – بتنظيم من بعثة جمهورية الصين الشعبية لدى الاتحاد الأفريقي",
+			es: "Embajador de China ante la UA – organizado por la Misión de la RPCh ante la Unión Africana",
+		},
+		description: {
+			en: "Attended the annual reception hosted by Ambassador Jiang Feng at the PRC Mission to the AU. Exchanged views on the deepening of AU‑China strategic relations and the outcomes of the 2025 FOCAC summit.",
+			fr: "A assisté à la réception annuelle organisée par l'Ambassadeur Jiang Feng à la Mission de la RPC auprès de l'UA. Échange de vues sur l'approfondissement des relations stratégiques UA-Chine et les résultats du sommet FOCAC 2025.",
+			ar: "حضر الاستقبال السنوي الذي أقامه السفير جيانغ فنغ في بعثة جمهورية الصين الشعبية لدى الاتحاد الأفريقي. تبادل الآراء حول تعميق العلاقات الاستراتيجية بين الاتحاد الأفريقي والصين ونتائج قمة منتدى التعاون الصيني الأفريقي 2025.",
+			es: "Asistió a la recepción anual ofrecida por el Embajador Jiang Feng en la Misión de la RPCh ante la UA. Intercambió puntos de vista sobre la profundización de las relaciones estratégicas UA-China y los resultados de la cumbre FOCAC 2025.",
+		},
+		cover: "/images/events/event4.jpg",
+		date: "2025-12-15",
+		location: {
+			en: "Addis Ababa, Ethiopia",
+			fr: "Addis-Abeba, Éthiopie",
+			ar: "أديس أبابا، إثيوبيا",
+			es: "Adís Abeba, Etiopía",
+		},
+		images: [],
 	},
 ];
 

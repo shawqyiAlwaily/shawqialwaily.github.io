@@ -1,8 +1,10 @@
-import { Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { articles } from "@/data/content";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 type Locale = "en" | "fr" | "ar" | "es";
 
@@ -22,36 +24,32 @@ const copy: Record<Locale, { kicker: string; tagline: string }> = {
 	},
 };
 
-const ArticleCard = ({ cover, title, caption, link, delay }: any) => {
+const ArticleCard = ({ title, caption, link, delay }: any) => {
+	const { isRTL } = useLanguage();
+	
 	return (
 		<Link
 			to={link}
-			className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg transition-transform duration-500 hover:-translate-y-2"
+			className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-6 transition-all duration-500 hover:-translate-y-2 hover:bg-white/10"
 			style={{
 				animation: "fade-up 0.8s ease-out forwards",
 				animationDelay: `${delay}s`,
 				opacity: 0,
 			}}
 		>
-			<div className="relative h-56 md:h-64 lg:h-72 overflow-hidden">
-				<img src={cover} alt={title} className="w-full h-full object-cover" />
-				<div className="absolute inset-0 bg-gradient-to-br from-[#5c3a8a]/60 to-transparent" />
-			</div>
-
-			<div className="p-5 flex items-center justify-between">
-				<div>
-					<p className="text-sm uppercase tracking-[0.2em] text-cyan-200/70">
-						Article
-					</p>
-					<h3 className="text-lg md:text-xl font-semibold text-white leading-tight">
-						{title}
-					</h3>
-					<p className="text-slate-200/80 mt-2 text-sm">{caption}</p>
-				</div>
-				<span className="text-cyan-200/80 transition-transform duration-300 group-hover:translate-x-1">
-					→
-				</span>
-			</div>
+			<p className="text-sm uppercase tracking-[0.2em] text-cyan-200/70">
+				Article
+			</p>
+			<h3 className="text-lg md:text-xl font-semibold text-white leading-tight mt-2">
+				{title}
+			</h3>
+			<p className="text-slate-200/80 mt-2 text-sm line-clamp-3">
+				{caption}
+			</p>
+			<span className={`inline-flex items-center gap-1 mt-4 text-cyan-200/80 transition-transform duration-300 group-hover:translate-x-1 ${isRTL ? 'group-hover:-translate-x-1' : ''}`}>
+				Read more {!isRTL && '→'}
+				{isRTL && '←'}
+			</span>
 		</Link>
 	);
 };
@@ -65,14 +63,13 @@ const ArticlesSection = () => {
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => setVisible(entry.isIntersecting),
-			{ threshold: 0.2 },
+			{ threshold: 0.2 }
 		);
 		if (sectionRef.current) observer.observe(sectionRef.current);
 		return () => observer.disconnect();
 	}, []);
 
-	const featured = articles[0];
-	const others = articles.slice(1, 4);
+	const displayArticles = articles.slice(0, 3);
 
 	return (
 		<section
@@ -103,32 +100,17 @@ const ArticlesSection = () => {
 				</motion.div>
 
 				<div
-					className={`mt-10 grid md:grid-cols-3 gap-6 ${visible ? "" : "opacity-0"}`}
-					style={{
-						animation: visible ? "fade-up 0.8s ease-out forwards" : undefined,
-					}}
+					className={`mt-10 grid md:grid-cols-3 gap-6 transition-opacity duration-700 ${
+						visible ? "opacity-100" : "opacity-0"
+					}`}
 				>
-					{featured && (
+					{displayArticles.map((article, idx) => (
 						<ArticleCard
-							key={featured.id}
-							cover={featured.cover}
-							title={featured.title[language as keyof typeof featured.title]}
-							caption={
-								featured.caption[language as keyof typeof featured.caption]
-							}
-							link={`/articles/${featured.slug}`}
-							delay={0.12}
-						/>
-					)}
-
-					{others.map((a, idx) => (
-						<ArticleCard
-							key={a.id}
-							cover={a.cover}
-							title={a.title[language as keyof typeof a.title]}
-							caption={a.caption[language as keyof typeof a.caption]}
-							link={`/articles/${a.slug}`}
-							delay={0.22 + idx * 0.08}
+							key={article.id}
+							title={article.title[language as keyof typeof article.title]}
+							caption={article.caption[language as keyof typeof article.caption]}
+							link={`/articles/${article.slug}`}
+							delay={0.12 + idx * 0.08}
 						/>
 					))}
 				</div>

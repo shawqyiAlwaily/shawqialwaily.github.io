@@ -5,6 +5,7 @@ import AuthorityMetricsSection from "@/components/sections/AuthorityMetricsSecti
 import BeliefBlocksSection from "@/components/sections/BeliefBlocksSection";
 import ValuePanelsSection from "@/components/sections/ValuePanelsSection";
 import ConsultationCTA from "@/components/sections/ConsultationCTA";
+import EventsSection from "@/components/sections/EventsSection"; // Add this import
 const HeroSection = lazy(() => import("@/components/sections/HeroSection"));
 const BooksSection = lazy(() => import("@/components/sections/BooksSection"));
 const ArticlesSection = lazy(
@@ -32,18 +33,25 @@ const Index = () => {
 			<Header />
 
 			<main>
-				<Suspense fallback={<div className="min-h-[50vh] #5c3a8a" />}>
+				<Suspense fallback={<div className="min-h-[50vh] bg-[#5c3a8a]" />}>
 					<HeroSection />
 				</Suspense>
+
 				<AuthorityMetricsSection />
 				<BeliefBlocksSection />
 				<ValuePanelsSection />
+
 				<Suspense fallback={<div className="min-h-[60vh] bg-[#5c3a8a]" />}>
 					<BooksSection />
 				</Suspense>
+
 				<Suspense fallback={<div className="min-h-[60vh] bg-[#5c3a8a]" />}>
 					<ArticlesSection />
 				</Suspense>
+
+				{/* Add EventsSection here - no Suspense needed since it's not lazy loaded */}
+				<EventsSection />
+
 				<ConsultationCTA />
 			</main>
 

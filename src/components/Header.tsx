@@ -11,6 +11,7 @@ import {
 	Twitter,
 	Facebook,
 	BookOpen,
+	Send,
 } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { personalInfo } from "@/data/content";
@@ -61,6 +62,7 @@ const Header = () => {
 		{ href: "/biography", label: t("nav.biography") },
 		{ href: "/articles", label: t("nav.articles") },
 		{ href: "/books", label: t("nav.books") },
+		{ href: "/events", label: "Events & Photos" },
 	];
 
 	const navigate = useNavigate();
@@ -75,7 +77,7 @@ const Header = () => {
 			className={cn(
 				"fixed top-0 left-0 right-0 z-40 transition-all duration-500",
 				isScrolled
-					? "bg-[#5c3a8a]/85 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)] py-3"
+					? "bg-[#5c3a8a]/90 backdrop-blur-xl border-b border-white/10 shadow-lg py-3" // Changed to purple
 					: "bg-transparent py-6",
 			)}
 		>
@@ -87,10 +89,10 @@ const Header = () => {
 					<div ref={menuRef} className="relative">
 						<button
 							className={cn(
-								"p-2 rounded-lg transition-all duration-300",
+								"p-2 rounded-lg transition-all duration-300 text-white", // Changed text to white
 								isScrolled
-									? "hover:bg-muted"
-									: "hover:bg-primary-foreground/10",
+									? "hover:bg-white/10" // Changed to white with opacity
+									: "hover:bg-white/10",
 							)}
 							onClick={() => setIsMenuOpen(!isMenuOpen)}
 							aria-label="Toggle menu"
@@ -98,15 +100,13 @@ const Header = () => {
 							<div className="relative w-6 h-6">
 								<Menu
 									className={cn(
-										"w-6 h-6 absolute inset-0 transition-all duration-300",
-										isScrolled ? "text-white" : "text-white",
+										"w-6 h-6 absolute inset-0 transition-all duration-300 text-white", // Changed to white
 										isMenuOpen ? "opacity-0 rotate-90" : "opacity-100 rotate-0",
 									)}
 								/>
 								<X
 									className={cn(
-										"w-6 h-6 absolute inset-0 transition-all duration-300",
-										isScrolled ? "text-white" : "text-white",
+										"w-6 h-6 absolute inset-0 transition-all duration-300 text-white", // Changed to white
 										isMenuOpen
 											? "opacity-100 rotate-0"
 											: "opacity-0 -rotate-90",
@@ -120,14 +120,14 @@ const Header = () => {
 							<>
 								{/* Backdrop */}
 								<div
-									className="fixed inset-0 z-40 bg-black/40 backdrop-blur-[2px]"
+									className="fixed inset-0 z-40 bg-[#2a1b3d]/80 backdrop-blur-sm" // Changed to dark purple backdrop
 									onClick={() => setIsMenuOpen(false)}
 								/>
 
-								{/* Panel */}
+								{/* Panel - Changed to purple gradient */}
 								<div
 									className={cn(
-										"fixed top-0 left-0 right-0 z-50 h-[80vh] bg-primary text-white shadow-lg transition-transform duration-500 ease-out",
+										"fixed top-0 left-0 right-0 z-50 h-[80vh] bg-gradient-to-br from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e] text-white shadow-lg transition-transform duration-500 ease-out", // Changed to purple gradient
 										"animate-slide-down",
 										"border-b border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.25)]",
 									)}
@@ -137,7 +137,7 @@ const Header = () => {
 									<button
 										onClick={() => setIsMenuOpen(false)}
 										aria-label="Close menu"
-										className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center shadow-md"
+										className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center shadow-md transition-colors"
 									>
 										<X className="w-6 h-6" />
 									</button>
@@ -152,7 +152,7 @@ const Header = () => {
 										>
 											<div>
 												<h2 className="font-playfair text-3xl md:text-5xl font-bold text-white">
-													Shawqi Al-Waily
+													Shawqi Alwaily
 												</h2>
 											</div>
 											<div className="flex flex-col gap-3 text-white/80">
@@ -160,40 +160,61 @@ const Header = () => {
 													href="http://x.com/shawky39851988"
 													target="_blank"
 													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
 												>
-													<Twitter className="w-5 h-5 text-white" />
-													<span className="text-white">X</span>
+													<Twitter className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+													<span className="text-white/90 group-hover:text-white">
+														X
+													</span>
 												</a>
 
 												<a
 													href="https://www.facebook.com/shawki.mohammed.1"
 													target="_blank"
 													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
 												>
-													<Facebook className="w-5 h-5 text-white" />
-													<span className="text-white">Facebook</span>
+													<Facebook className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+													<span className="text-white/90 group-hover:text-white">
+														Facebook
+													</span>
 												</a>
 
 												<a
 													href={personalInfo.socialLinks.linkedin}
 													target="_blank"
 													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
 												>
-													<Linkedin className="w-5 h-5 text-white" />
-													<span className="text-white">LinkedIn</span>
+													<Linkedin className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+													<span className="text-white/90 group-hover:text-white">
+														LinkedIn
+													</span>
+												</a>
+
+												{/* Telegram Link */}
+												<a
+													href="https://t.me/+251912601933"
+													target="_blank"
+													rel="noopener noreferrer"
+													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
+												>
+													<Send className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+													<span className="text-white/90 group-hover:text-white">
+														Telegram
+													</span>
 												</a>
 
 												<a
 													href={personalInfo.socialLinks.academia}
 													target="_blank"
 													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
 												>
-													<BookOpen className="w-5 h-5 text-white" />
-													<span className="text-white">Academia</span>
+													<BookOpen className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+													<span className="text-white/90 group-hover:text-white">
+														Academia
+													</span>
 												</a>
 											</div>
 										</div>
@@ -211,7 +232,7 @@ const Header = () => {
 													<button
 														key={item.href}
 														onClick={() => scrollToSection(item.href)}
-														className="text-left text-2xl md:text-4xl font-semibold md:font-bold text-white hover:text-white/80 transition-colors"
+														className="text-left text-2xl md:text-4xl font-semibold md:font-bold text-white/90 hover:text-white transition-colors"
 													>
 														{item.label}
 													</button>
@@ -219,32 +240,30 @@ const Header = () => {
 											</nav>
 
 											<div className="pt-4">
-												<div className="text-sm uppercase tracking-[0.25em] text-white/60 mb-3">
+												<div className="text-sm uppercase tracking-[0.25em] text-cyan-200/70 mb-3">
 													Contact
 												</div>
 												<div className="flex flex-col gap-2 text-lg">
 													<a
 														href="tel:+201002307197"
-														className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+														className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
 													>
-														<Phone className="w-4 h-4 text-white" />
-														<span className="text-white">+20 100 230 7197</span>
+														<Phone className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors" />
+														<span>+20 100 230 7197</span>
 													</a>
 													<a
 														href="tel:+251912601933"
-														className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+														className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
 													>
-														<Phone className="w-4 h-4 text-white" />
-														<span className="text-white">+251 912 601 933</span>
+														<Phone className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors" />
+														<span>+251 912 601 933</span>
 													</a>
 													<a
 														href="mailto:shawqialwaily@outlook.com"
-														className="inline-flex items-center gap-2 hover:text-gray-300 transition-colors"
+														className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
 													>
-														<Mail className="w-4 h-4 text-white" />
-														<span className="text-white">
-															shawqialwaily@outlook.com
-														</span>
+														<Mail className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors" />
+														<span>shawqialwaily@outlook.com</span>
 													</a>
 												</div>
 											</div>

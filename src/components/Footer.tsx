@@ -7,6 +7,7 @@ import {
 	Mail,
 	Facebook,
 	BookOpen,
+	Send, // Add Telegram icon
 } from "lucide-react";
 
 const Footer = () => {
@@ -41,6 +42,11 @@ const Footer = () => {
 			icon: Facebook,
 			url: "https://www.facebook.com/shawki.mohammed.1",
 			label: "Facebook",
+		},
+		{
+			icon: Send, // Telegram icon
+			url: "https://t.me/+251912601933",
+			label: "Telegram",
 		},
 		{
 			icon: BookOpen,
