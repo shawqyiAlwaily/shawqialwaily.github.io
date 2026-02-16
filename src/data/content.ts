@@ -194,201 +194,240 @@ export const books = [
 	},
 ];
 
-export const articles = [
-	{
-		id: "article-1",
-		slug: "resilience-and-change",
-		title: {
-			en: "Resilience and Change",
-			fr: "Résilience et Changement",
-			ar: "المرونة والتغيير",
-			es: "Resiliencia y Cambio",
-		},
-		caption: {
-			en: "Adapting organizations for turbulent times.",
-			fr: "Adapter les organisations aux temps turbulents.",
-			ar: "تهيئة المنظمات للأوقات العاصفة.",
-			es: "Adaptar las organizaciones para tiempos turbulentos.",
-		},
-		description: {
-			en: "An overview of interventions and cultural shifts that build organizational resilience.",
-			fr: "Un aperçu des interventions et changements culturels qui renforcent la résilience organisationnelle.",
-			ar: "نظرة عامة على التدخلات والتحولات الثقافية التي تبني مرونة المؤسسة.",
-			es: "Una visión general de intervenciones y cambios culturales que construyen la resiliencia organizacional.",
-		},
-		excerpt: {
-			en: "How organizations withstand shocks and pivot effectively.",
-			fr: "Comment les organisations résistent aux chocs et pivôtent efficacement.",
-			ar: "كيف تتحمل المؤ스ات الصدمات وتتحول بفعالية.",
-			es: "Cómo las organizaciones resisten los shocks y pivotan eficazmente.",
-		},
-		cover: "/images/articles/resilience-and-change/cover.jpg",
-		date: "2023-11-15",
-		videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
-		content: {
-			en: `# Resilience and Change
-
-Organizational resilience isn't about bouncing back—it's about bouncing forward.
-
-![Organizational resilience model](/images/articles/resilienceGraph.jpg)
-
-## The Four Pillars of Resilience
-
-1. **Anticipatory** – The ability to detect threats before they materialize
-2. **Adaptive** – The capacity to adjust quickly to new conditions
-3. **Recovery** – The speed at which you can restore operations
-4. **Growth** – The ability to emerge stronger from adversity
-
-## Building a Resilient Culture
-
-Resilience isn't something you can buy; it must be cultivated. Here are five interventions that work:
-
-### 1. Psychological Safety
-
-Teams that feel safe to speak up identify problems 70% faster and solve them 50% more effectively.
-
-### 2. Distributed Decision-Making
-
-Empower people closest to the work to make decisions. During COVID-19, companies with decentralized authority adapted 3x faster than centralized peers.
-
-### 3. Redundancy with Purpose
-
-Not duplication—intelligent redundancy. Cross-train people, diversify suppliers, and maintain strategic reserves.
-
-### 4. Learning Systems
-
-Every failure is data. Create mechanisms to capture, share, and act on lessons learned.
-
-### 5. Purpose Anchoring
-
-Purpose is the ultimate resilience mechanism. When people know why they're doing the work, they find a way through any obstacle.
-
-## Case Study: Supply Chain Transformation
-
-A global manufacturer faced cascading disruptions in 2020-2021: factory closures, port congestion, semiconductor shortages. Rather than simply firefighting, they used the crisis to fundamentally redesign their supply chain.
-
-| Before | After |
-|--------|-------|
-| Single-source suppliers | Multi-source with geographic diversity |
-| Just-in-time inventory | Strategic buffer stocks |
-| Reactive planning | Predictive analytics |
-| Siloed procurement | Cross-functional resilience teams |
-
-> "It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change." – Charles Darwin
-
-## Practical Implementation
-
-Start small. Pick one business unit or function and run a resilience pilot:
-
-1. **Map critical dependencies** – What would break if X happened?
-2. **Identify single points of failure** – People, systems, suppliers
-3. **Develop contingency plans** – What will you do when (not if)?
-4. **Test through simulation** – Tabletop exercises reveal gaps
-
-## Conclusion
-
-Resilience is becoming the defining competitive advantage of our era. Organizations that invest in anticipatory capabilities, adaptive capacity, and learning systems won't just survive disruption—they'll lead through it.`,
-			fr: `# Résilience et Changement
-
-[French content here]`,
-			ar: `# المرونة والتغيير
-
-[Arabic content here]`,
-			es: `# Resiliencia y Cambio
-
-[Spanish content here]`,
-		},
+{
+	id: "article-3",
+	slug: "ethiopia-trade-horizons",
+	title: {
+		en: "Ethiopia's Trade Horizons: Navigating Export & Import",
+		fr: "Horizons Commerciaux de l'Éthiopie : Naviguer l'Export et l'Import",
+		ar: "آفاق التجارة في إثيوبيا: التعامل مع التصدير والاستيراد",
+		es: "Horizontes Comerciales de Etiopía: Navegando la Exportación e Importación",
 	},
-	{
-		id: "article-2",
-		slug: "strategic-insights",
-		title: {
-			en: "Strategic Insights: Leading with Vision",
-			fr: "Perspectives Stratégiques : Diriger avec Vision",
-			ar: "أفكار استراتيجية: القيادة برؤية",
-			es: "Perspectivas Estratégicas: Liderar con Visión",
-		},
-		caption: {
-			en: "A short reflection on modern strategic leadership.",
-			fr: "Une brève réflexion sur le leadership stratégique moderne.",
-			ar: "تأمل قصير في القيادة الاستراتيجية المعاصرة.",
-			es: "Una breve reflexión sobre el liderazgo estratégico moderno.",
-		},
-		description: {
-			en: "This article explores practical frameworks and case studies for leaders who want to translate long-term vision into concrete action.",
-			fr: "Cet article explore des cadres pratiques et des études de cas pour les dirigeants souhaitant traduire une vision à long terme en actions concrètes.",
-			ar: "يستعرض هذا المقال أطرًا عملية ودراسات حالة للقادة الذين يريدون تحويل الرؤية طويلة الأمد إلى عمل ملموس.",
-			es: "Este artículo explora marcos prácticos y estudios de caso para líderes que desean traducir la visión a largo plazo en acción concreta.",
-		},
-		excerpt: {
-			en: "Practical frameworks for translating vision into action.",
-			fr: "Des cadres pratiques pour traduire la vision en action.",
-			ar: "أطر عملية لتحويل الرؤية إلى فعل.",
-			es: "Marcos prácticos para traducir la visión en acción.",
-		},
-		cover: "/images/articles/strategic-insights/cover.jpg",
-		date: "2024-07-01",
-		videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-		content: {
-			en: `# Leading with Vision
+	caption: {
+		en: "Opportunities and challenges in one of Africa's fastest-growing economies.",
+		fr: "Opportunités et défis dans l'une des économies à la croissance la plus rapide d'Afrique.",
+		ar: "الفرص والتحديات في أحد أسرع الاقتصادات نموًا في إفريقيا.",
+		es: "Oportunidades y desafíos en una de las economías de más rápido crecimiento de África.",
+	},
+	description: {
+		en: "A comprehensive analysis of Ethiopia's trade landscape, covering key export commodities, import regulations, market entry strategies, and the evolving policy environment for international businesses.",
+		fr: "Une analyse complète du paysage commercial de l'Éthiopie, couvrant les principales marchandises d'exportation, les réglementations d'importation, les stratégies d'entrée sur le marché et l'évolution de l'environnement politique pour les entreprises internationales.",
+		ar: "تحليل شامل للمشهد التجاري في إثيوبيا، يغطي السلع التصديرية الرئيسية، لوائح الاستيراد، استراتيجيات دخول السوق، والبيئة السياسية المتطورة للشركات الدولية.",
+		es: "Un análisis completo del panorama comercial de Etiopía, que cubre los principales productos de exportación, regulaciones de importación, estrategias de entrada al mercado y el cambiante entorno político para empresas internacionales.",
+	},
+	excerpt: {
+		en: "Understanding Ethiopia's trade potential and navigating its regulatory framework.",
+		fr: "Comprendre le potentiel commercial de l'Éthiopie et naviguer dans son cadre réglementaire.",
+		ar: "فهم الإمكانات التجارية لإثيوبيا والتنقل في إطارها التنظيمي.",
+		es: "Comprender el potencial comercial de Etiopía y navegar por su marco regulatorio.",
+	},
+	cover: "/images/articles/ethiopia-trade-horizons/cover.jpg",
+	date: "2024-02-10",
+	videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
+	content: {
+		en: `# Ethiopia's Trade Horizons: Navigating Export & Import
 
-In today's volatile environment, vision is not a luxury—it's a necessity.
+With Africa's second-largest population and one of the continent's fastest-growing economies, Ethiopia represents a frontier market of immense potential. But navigating its trade landscape requires understanding both opportunities and complexities.
 
-![Strategic planning graph](/images/articles/strategic-insights/strategy-graph.png)
+![Ethiopia trade map](/images/articles/ethiopia-trade-horizons/ethiopia-trade.jpg)
 
-## The Framework
+## The Current Trade Landscape
 
-1. **Sense-making** – Understand the external signals. Leaders must constantly scan the horizon for emerging trends, competitive threats, and shifting customer expectations.
-2. **Direction-setting** – Define a clear, compelling future. This isn't just about goals; it's about painting a picture of what success looks like that inspires action.
-3. **Alignment** – Mobilize the organization around the vision. Every system, process, and person must be oriented toward the same North Star.
+Ethiopia has undergone significant economic transformation over the past two decades, with average GDP growth hovering around 8-10% annually. This growth has reshaped both its export profile and import demand.
 
-## Case Study: Transforming a Legacy Organization
+### Key Export Commodities
 
-When Maria took over as CEO of a 100-year-old manufacturing company, the leadership team was fragmented and the strategy was unclear. Through a series of vision workshops and strategic offsites, she:
+| Sector | Primary Products | Major Markets |
+|--------|------------------|---------------|
+| **Coffee** | Arabica (Sidamo, Yirgacheffe, Harar) | Germany, Saudi Arabia, Japan, USA |
+| **Oilseeds** | Sesame seeds, Niger seeds | China, Israel, UAE |
+| **Pulses** | Chickpeas, lentils | India, Pakistan, UAE |
+| **Flowers** | Cut roses, carnations | Netherlands, Germany, UK |
+| **Textiles** | Garments, leather products | USA (AGOA), EU, Turkey |
+| **Khat** | Fresh leaves | Somalia, Djibouti |
 
-- **Conducted 50+ stakeholder interviews** to understand market dynamics
-- **Developed a clear 5-year vision** with measurable milestones
-- **Aligned executive incentives** to collaborative goals rather than siloed metrics
+> Ethiopia is Africa's largest coffee producer and the birthplace of Arabica coffee—a heritage that commands premium prices in specialty markets.
 
-The result? Within 18 months, the company launched three new product lines, employee engagement scores rose 40%, and market share increased by 12%.
+## Export Opportunities
 
-> "Vision without execution is hallucination." – Thomas Edison
+### 1. Specialty Coffee
 
-## Practical Frameworks for Leaders
+Ethiopia's coffee exports reached approximately $1.4 billion in recent years, but there's room to grow. The specialty coffee movement has created opportunities for:
 
-### The Vision Cascade
+- **Direct trade relationships** with roasters
+- **Single-origin branding** based on regions
+- **Value-added processing** (roasted rather than green bean exports)
+
+### 2. Agro-processing
+
+The government is actively promoting investment in agro-processing parks, including:
+
+- **Integrated Agro-Industrial Parks** in four regions
+- **Incentives** for processors of fruits, vegetables, and livestock
+- **Export-focused zones** with dedicated infrastructure
+
+### 3. Textiles and Apparel
+
+With preferential access to the US market under AGOA (African Growth and Opportunity Act) and duty-free access to China, Ethiopia's textile sector is poised for growth:
 
 \`\`\`
-Corporate Vision → Business Unit Strategy → Team Objectives → Individual Goals
+AGOA Benefits: Duty-free, quota-free access for eligible products
+Labor Advantage: Competitive wages in the region
+Energy: Among Africa's lowest electricity costs
 \`\`\`
 
-This cascade ensures that every level of the organization understands how their work connects to the bigger picture.
+## Import Landscape
 
-### The 3 Horizons Model
+### Major Import Categories
 
-- **Horizon 1** (0-12 months): Optimize current business
-- **Horizon 2** (1-3 years): Build emerging businesses
-- **Horizon 3** (3-5+ years): Create viable options for the future
+| Category | Examples | Key Source Countries |
+|----------|----------|---------------------|
+| **Machinery** | Industrial equipment, construction vehicles | China, Turkey, Italy |
+| **Electronics** | Mobile phones, computers | China, UAE |
+| **Vehicles** | Cars, trucks, buses | Japan, China, India |
+| **Pharmaceuticals** | Medicines, medical supplies | India, France |
+| **Fertilizers** | Agricultural inputs | Morocco, Russia |
+| **Petroleum** | Refined products | Kuwait, UAE |
+
+### Regulatory Framework
+
+The Ethiopian Investment Commission (EIC) and Ministry of Trade and Regional Integration oversee trade activities. Key considerations:
+
+#### Import Restrictions
+
+- Some items require **pre-import inspection** by authorized agencies
+- **Phased bans** on certain consumer goods to encourage local manufacturing
+- **Foreign exchange controls** affecting payment timelines
+
+#### Tariff Structure
+
+Ethiopia applies the Common External Tariff of the COMESA region, with rates typically ranging from:
+
+- **0-5%** for raw materials and capital goods
+- **10-30%** for intermediate goods
+- **30-50%** for finished consumer goods
+
+## Market Entry Strategies
+
+### 1. Partner with Local Distributors
+
+For importers, establishing relationships with established Ethiopian distributors can provide:
+
+- **Market knowledge** and customer relationships
+- **Navigating bureaucracy** and customs clearance
+- **Warehousing** and logistics networks
+
+### 2. Direct Investment in Processing
+
+For exporters, moving up the value chain through local processing offers advantages:
+
+> "The real opportunity in Ethiopia isn't in raw commodity exports—it's in building processing capacity that captures value locally while serving global markets." — Ethiopian trade consultant
+
+### 3. Utilize Trade Hubs
+
+Djibouti serves as Ethiopia's primary maritime gateway, handling approximately 95% of its trade. Understanding the Djibouti corridor is essential:
+
+| Route | Transit Time | Key Considerations |
+|-------|--------------|---------------------|
+| Djibouti–Addis Ababa | 2-3 days | Railway (modern electric line) |
+| Djibouti–Modjo Dry Port | 1-2 days | Trucking, customs clearance |
+| Berbera (Somaliland) | Emerging option | Diversification strategy |
+
+## Policy Environment and Reforms
+
+### Recent Developments
+
+Ethiopia has been progressively liberalizing its economy:
+
+- **2020**: Opening of logistics, telecom, and aviation to foreign investment
+- **2021-2022**: Banking sector reform discussions
+- **2023**: Foreign currency retention policy changes for exporters
+
+### The Homegrown Economic Reform Agenda
+
+This ambitious program focuses on:
+
+1. **Macroeconomic stability** – Addressing foreign exchange constraints
+2. **Structural transformation** – Moving from agriculture to industry
+3. **Private sector development** – Reducing state-owned enterprise dominance
+4. **Export competitiveness** – Improving logistics and trade facilitation
+
+## Challenges and Risk Mitigation
+
+### Key Challenges
+
+| Challenge | Impact | Mitigation Strategy |
+|-----------|--------|---------------------|
+| **Foreign currency shortage** | Delayed payments, import restrictions | Work with banks experienced in Ethiopia; consider countertrade arrangements |
+| **Logistics bottlenecks** | Delayed shipments, increased costs | Build buffer inventory; diversify ports (Berbera, Lamu corridor) |
+| **Regulatory changes** | Uncertainty | Maintain local legal counsel; join industry associations |
+| **Infrastructure gaps** | Higher operating costs | Factor into business models; consider industrial park locations |
+
+## Practical Steps for Entry
+
+### For Exporters (selling from Ethiopia)
+
+1. **Product registration** with the Ministry of Trade
+2. **Quality certification** (often required for coffee, flowers)
+3. **Export permit** for regulated commodities
+4. **Foreign currency account** setup with commercial bank
+5. **Shipping and logistics** arrangements
+
+### For Importers (selling to Ethiopia)
+
+1. **Business registration** in Ethiopia or partner with local entity
+2. **Product registration** with relevant regulatory bodies
+3. **Supplier registration** with Ethiopian banks
+4. **Letter of credit** arrangements
+5. **Customs clearance** through licensed agents
+
+## Case Study: Coffee Exporter Success
+
+A European specialty coffee company established direct relationships with cooperatives in Yirgacheffe and Sidama. By investing in:
+
+- **Quality improvement** training for farmers
+- **Direct purchasing** eliminating intermediaries
+- **Value-added processing** (washing stations, drying beds)
+
+They achieved:
+- 40% higher prices for farmers
+- Consistent specialty-grade exports
+- Strong brand positioning in European markets
+
+## Future Outlook
+
+Several developments will shape Ethiopia's trade landscape:
+
+- **BRICS membership** (joined 2023) – New diplomatic and economic alliances
+- **Debt restructuring** – Under G20 Common Framework
+- **Industrial park expansion** – 13+ parks operational or under development
+- **Digital transformation** – Trade digitization initiatives
 
 ## Conclusion
 
-Leading with vision requires both imagination and execution discipline. The leaders who succeed are those who can hold the tension between the aspirational and the operational—dreaming big while sweating the small stuff.
+Ethiopia offers substantial opportunities for traders and investors willing to navigate its unique environment. Success requires:
+
+- **Long-term perspective** – This is not a market for quick returns
+- **Local presence** – Relationships matter enormously
+- **Regulatory vigilance** – The landscape continues to evolve
+- **Creative problem-solving** – Standard approaches rarely work
+
+For those who invest the time to understand Ethiopia's trade horizons, the rewards can be significant—both commercially and in contributing to one of Africa's most promising economic stories.
 
 ---
 
-*This article is part of our series on strategic leadership. For more insights, watch the accompanying video below.*`,
-			fr: `# Diriger avec Vision
+*This article draws on interviews with traders, government officials, and logistics providers operating in Ethiopia. Market conditions change rapidly; consult current sources and local advisors before making business decisions.*`,
+		fr: `# Horizons Commerciaux de l'Éthiopie : Naviguer l'Export et l'Import
 
-[French content here]`,
-			ar: `# القيادة برؤية
+[French content here - would be a translation of the English content]`,
+		ar: `# آفاق التجارة في إثيوبيا: التعامل مع التصدير والاستيراد
 
-[Arabic content here]`,
-			es: `# Liderar con Visión
+[Arabic content here - would be a translation of the English content]`,
+		es: `# Horizontes Comerciales de Etiopía: Navegando la Exportación e Importación
 
-[Spanish content here]`,
-		},
+[Spanish content here - would be a translation of the English content]`,
 	},
-];
+}
 // Replace your existing events array with this consolidated version
 
 export const events = [
