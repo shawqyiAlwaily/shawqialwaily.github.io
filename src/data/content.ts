@@ -194,42 +194,43 @@ export const books = [
 	},
 ];
 
-{
-	id: "article-3",
-	slug: "ethiopia-trade-horizons",
-	title: {
-		en: "Ethiopia's Trade Horizons: Navigating Export & Import",
-		fr: "Horizons Commerciaux de l'Éthiopie : Naviguer l'Export et l'Import",
-		ar: "آفاق التجارة في إثيوبيا: التعامل مع التصدير والاستيراد",
-		es: "Horizontes Comerciales de Etiopía: Navegando la Exportación e Importación",
-	},
-	caption: {
-		en: "Opportunities and challenges in one of Africa's fastest-growing economies.",
-		fr: "Opportunités et défis dans l'une des économies à la croissance la plus rapide d'Afrique.",
-		ar: "الفرص والتحديات في أحد أسرع الاقتصادات نموًا في إفريقيا.",
-		es: "Oportunidades y desafíos en una de las economías de más rápido crecimiento de África.",
-	},
-	description: {
-		en: "A comprehensive analysis of Ethiopia's trade landscape, covering key export commodities, import regulations, market entry strategies, and the evolving policy environment for international businesses.",
-		fr: "Une analyse complète du paysage commercial de l'Éthiopie, couvrant les principales marchandises d'exportation, les réglementations d'importation, les stratégies d'entrée sur le marché et l'évolution de l'environnement politique pour les entreprises internationales.",
-		ar: "تحليل شامل للمشهد التجاري في إثيوبيا، يغطي السلع التصديرية الرئيسية، لوائح الاستيراد، استراتيجيات دخول السوق، والبيئة السياسية المتطورة للشركات الدولية.",
-		es: "Un análisis completo del panorama comercial de Etiopía, que cubre los principales productos de exportación, regulaciones de importación, estrategias de entrada al mercado y el cambiante entorno político para empresas internacionales.",
-	},
-	excerpt: {
-		en: "Understanding Ethiopia's trade potential and navigating its regulatory framework.",
-		fr: "Comprendre le potentiel commercial de l'Éthiopie et naviguer dans son cadre réglementaire.",
-		ar: "فهم الإمكانات التجارية لإثيوبيا والتنقل في إطارها التنظيمي.",
-		es: "Comprender el potencial comercial de Etiopía y navegar por su marco regulatorio.",
-	},
-	cover: "/images/articles/ethiopia-trade-horizons/cover.jpg",
-	date: "2024-02-10",
-	videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
-	content: {
-		en: `# Ethiopia's Trade Horizons: Navigating Export & Import
+export const articles = [
+	{
+		id: "article-1",
+		slug: "ethiopia-trade-horizons",
+		title: {
+			en: "Ethiopia's Trade Horizons: Navigating Export & Import",
+			fr: "Horizons Commerciaux de l'Éthiopie : Naviguer l'Export et l'Import",
+			ar: "آفاق التجارة في إثيوبيا: التعامل مع التصدير والاستيراد",
+			es: "Horizontes Comerciales de Etiopía: Navegando la Exportación e Importación",
+		},
+		caption: {
+			en: "Opportunities and challenges in one of Africa's fastest-growing economies.",
+			fr: "Opportunités et défis dans l'une des économies à la croissance la plus rapide d'Afrique.",
+			ar: "الفرص والتحديات في أحد أسرع الاقتصادات نموًا في إفريقيا.",
+			es: "Oportunidades y desafíos en una de las economías de más rápido crecimiento de África.",
+		},
+		description: {
+			en: "A comprehensive analysis of Ethiopia's trade landscape, covering key export commodities, import regulations, market entry strategies, and the evolving policy environment for international businesses.",
+			fr: "Une analyse complète du paysage commercial de l'Éthiopie, couvrant les principales marchandises d'exportation, les réglementations d'importation, les stratégies d'entrée sur le marché et l'évolution de l'environnement politique pour les entreprises internationales.",
+			ar: "تحليل شامل للمشهد التجاري في إثيوبيا، يغطي السلع التصديرية الرئيسية، لوائح الاستيراد، استراتيجيات دخول السوق، والبيئة السياسية المتطورة للشركات الدولية.",
+			es: "Un análisis completo del panorama comercial de Etiopía, que cubre los principales productos de exportación, regulaciones de importación, estrategias de entrada al mercado y el cambiante entorno político para empresas internacionales.",
+		},
+		excerpt: {
+			en: "Understanding Ethiopia's trade potential and navigating its regulatory framework.",
+			fr: "Comprendre le potentiel commercial de l'Éthiopie et naviguer dans son cadre réglementaire.",
+			ar: "فهم الإمكانات التجارية لإثيوبيا والتنقل في إطارها التنظيمي.",
+			es: "Comprender el potencial comercial de Etiopía y navegar por su marco regulatorio.",
+		},
+		cover: "/images/articles/ethiopia-trade-horizons/cover.jpg",
+		date: "2024-02-10",
+		videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
+		content: {
+			en: `# Ethiopia's Trade Horizons: Navigating Export & Import
 
 With Africa's second-largest population and one of the continent's fastest-growing economies, Ethiopia represents a frontier market of immense potential. But navigating its trade landscape requires understanding both opportunities and complexities.
 
-![Ethiopia trade map](/images/articles/ethiopia-trade-horizons/ethiopia-trade.jpg)
+![Ethiopia trade map](/images/articles/ethiopia-trade.jpg)
 
 ## The Current Trade Landscape
 
@@ -417,17 +418,24 @@ For those who invest the time to understand Ethiopia's trade horizons, the rewar
 ---
 
 *This article draws on interviews with traders, government officials, and logistics providers operating in Ethiopia. Market conditions change rapidly; consult current sources and local advisors before making business decisions.*`,
-		fr: `# Horizons Commerciaux de l'Éthiopie : Naviguer l'Export et l'Import
+			fr: `# Horizons Commerciaux de l'Éthiopie : Naviguer l'Export et l'Import
 
-[French content here - would be a translation of the English content]`,
-		ar: `# آفاق التجارة في إثيوبيا: التعامل مع التصدير والاستيراد
+Avec la deuxième plus grande population d'Afrique et l'une des économies à la croissance la plus rapide du continent, l'Éthiopie représente un marché frontalier au potentiel immense. Mais naviguer dans son paysage commercial nécessite de comprendre à la fois les opportunités et les complexités.
 
-[Arabic content here - would be a translation of the English content]`,
-		es: `# Horizontes Comerciales de Etiopía: Navegando la Exportación e Importación
+[Le contenu français complet serait une traduction du contenu anglais ci-dessus]`,
+			ar: `# آفاق التجارة في إثيوبيا: التعامل مع التصدير والاستيراد
 
-[Spanish content here - would be a translation of the English content]`,
+بفضل ثاني أكبر سكان في إفريقيا وأحد أسرع الاقتصادات نموًا في القارة، تمثل إثيوبيا سوقًا حدودية ذات إمكانات هائلة. لكن التعامل مع مشهدها التجاري يتطلب فهم الفرص والتعقيدات على حد سواء.
+
+[المحتوى العربي الكامل سيكون ترجمة للمحتوى الإنجليزي أعلاه]`,
+			es: `# Horizontes Comerciales de Etiopía: Navegando la Exportación e Importación
+
+Con la segunda población más grande de África y una de las economías de más rápido crecimiento del continente, Etiopía representa un mercado fronterizo de inmenso potencial. Pero navegar por su panorama comercial requiere comprender tanto las oportunidades como las complejidades.
+
+[El contenido completo en español sería una traducción del contenido en inglés anterior]`,
+		},
 	},
-}
+];
 // Replace your existing events array with this consolidated version
 
 export const events = [
