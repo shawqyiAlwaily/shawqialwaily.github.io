@@ -723,7 +723,7 @@ For investors, buyers, and partners, Burundi's avocado oil sector offers entry i
 
 [Spanish content here - would be a translation of the English content]`,
 	},
-} 
+},
 	{
 	id: "article-3",
 	slug: "africa-it-professionals-platform",
