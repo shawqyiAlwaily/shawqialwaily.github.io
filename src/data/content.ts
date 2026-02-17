@@ -420,53 +420,47 @@ For those who invest the time to understand Ethiopia's trade horizons, the rewar
 *This article draws on interviews with traders, government officials, and logistics providers operating in Ethiopia. Market conditions change rapidly; consult current sources and local advisors before making business decisions.*`,
 			fr: `# Horizons Commerciaux de l'Éthiopie : Naviguer l'Export et l'Import
 
-Avec la deuxième plus grande population d'Afrique et l'une des économies à la croissance la plus rapide du continent, l'Éthiopie représente un marché frontalier au potentiel immense. Mais naviguer dans son paysage commercial nécessite de comprendre à la fois les opportunités et les complexités.
-
-[Le contenu français complet serait une traduction du contenu anglais ci-dessus]`,
+[French content here]`,
 			ar: `# آفاق التجارة في إثيوبيا: التعامل مع التصدير والاستيراد
 
-بفضل ثاني أكبر سكان في إفريقيا وأحد أسرع الاقتصادات نموًا في القارة، تمثل إثيوبيا سوقًا حدودية ذات إمكانات هائلة. لكن التعامل مع مشهدها التجاري يتطلب فهم الفرص والتعقيدات على حد سواء.
-
-[المحتوى العربي الكامل سيكون ترجمة للمحتوى الإنجليزي أعلاه]`,
+[Arabic content here]`,
 			es: `# Horizontes Comerciales de Etiopía: Navegando la Exportación e Importación
 
-Con la segunda población más grande de África y una de las economías de más rápido crecimiento del continente, Etiopía representa un mercado fronterizo de inmenso potencial. Pero navegar por su panorama comercial requiere comprender tanto las oportunidades como las complejidades.
-
-[El contenido completo en español sería una traducción del contenido en inglés anterior]`,
+[Spanish content here]`,
 		},
 	},
 	{
-	id: "article-2",
-	slug: "burundi-avocado-oil-revolution",
-	title: {
-		en: "Burundi's Avocado Oil Revolution: From Local Fruit to Global Export",
-		fr: "La Révolution de l'Huile d'Avocat au Burundi : Du Fruit Local à l'Exportation Mondiale",
-		ar: "ثورة زيت الأفوكادو في بوروندي: من الفاكهة المحلية إلى التصدير العالمي",
-		es: "La Revolución del Aceite de Aguacate en Burundi: De Fruta Local a Exportación Global",
-	},
-	caption: {
-		en: "How Burundi is transforming its avocado abundance into a high-value export industry.",
-		fr: "Comment le Burundi transforme son abondance d'avocats en une industrie d'exportation à haute valeur ajoutée.",
-		ar: "كيف تحول بوروندي وفرة الأفوكادو لديها إلى صناعة تصدير عالية القيمة.",
-		es: "Cómo Burundi está transformando su abundancia de aguacates en una industria de exportación de alto valor.",
-	},
-	description: {
-		en: "An in-depth look at Burundi's emerging avocado oil sector, featuring market analysis, processing opportunities, export potential, and the story of local entrepreneurs building a value-added industry from the ground up.",
-		fr: "Un regard approfondi sur le secteur émergent de l'huile d'avocat au Burundi, avec une analyse de marché, des opportunités de transformation, le potentiel d'exportation et l'histoire d'entrepreneurs locaux construisant une industrie à valeur ajoutée à partir de zéro.",
-		ar: "نظرة متعمقة على قطاع زيت الأفوكادو الناشئ في بوروندي، تتضمن تحليل السوق وفرص المعالجة وإمكانات التصدير وقصة رواد الأعمال المحليين الذين يبنون صناعة ذات قيمة مضافة من الألف إلى الياء.",
-		es: "Una mirada en profundidad al emergente sector del aceite de aguacate en Burundi, que incluye análisis de mercado, oportunidades de procesamiento, potencial de exportación y la historia de emprendedores locales que construyen una industria de valor agregado desde cero.",
-	},
-	excerpt: {
-		en: "Value addition, export opportunities, and the entrepreneurs shaping Burundi's avocado future.",
-		fr: "Valeur ajoutée, opportunités d'exportation et les entrepreneurs qui façonnent l'avenir de l'avocat au Burundi.",
-		ar: "القيمة المضافة وفرص التصدير ورواد الأعمال الذين يشكلون مستقبل الأفوكادو في بوروندي.",
-		es: "Valor agregado, oportunidades de exportación y los emprendedores que dan forma al futuro del aguacate en Burundi.",
-	},
-	cover: "/images/articles/avocado-oil.jpg",
-	date: "2025-02-16",
-	videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
-	content: {
-		en: `# Burundi's Avocado Oil Revolution: From Local Fruit to Global Export
+		id: "article-2",
+		slug: "burundi-avocado-oil-revolution",
+		title: {
+			en: "Burundi's Avocado Oil Revolution: From Local Fruit to Global Export",
+			fr: "La Révolution de l'Huile d'Avocat au Burundi : Du Fruit Local à l'Exportation Mondiale",
+			ar: "ثورة زيت الأفوكادو في بوروندي: من الفاكهة المحلية إلى التصدير العالمي",
+			es: "La Revolución del Aceite de Aguacate en Burundi: De Fruta Local a Exportación Global",
+		},
+		caption: {
+			en: "How Burundi is transforming its avocado abundance into a high-value export industry.",
+			fr: "Comment le Burundi transforme son abondance d'avocats en une industrie d'exportation à haute valeur ajoutée.",
+			ar: "كيف تحول بوروندي وفرة الأفوكادو لديها إلى صناعة تصدير عالية القيمة.",
+			es: "Cómo Burundi está transformando su abundancia de aguacates en una industria de exportación de alto valor.",
+		},
+		description: {
+			en: "An in-depth look at Burundi's emerging avocado oil sector, featuring market analysis, processing opportunities, export potential, and the story of local entrepreneurs building a value-added industry from the ground up.",
+			fr: "Un regard approfondi sur le secteur émergent de l'huile d'avocat au Burundi, avec une analyse de marché, des opportunités de transformation, le potentiel d'exportation et l'histoire d'entrepreneurs locaux construisant une industrie à valeur ajoutée à partir de zéro.",
+			ar: "نظرة متعمقة على قطاع زيت الأفوكادو الناشئ في بوروندي، تتضمن تحليل السوق وفرص المعالجة وإمكانات التصدير وقصة رواد الأعمال المحليين الذين يبنون صناعة ذات قيمة مضافة من الألف إلى الياء.",
+			es: "Una mirada en profundidad al emergente sector del aceite de aguacate en Burundi, que incluye análisis de mercado, oportunidades de procesamiento, potencial de exportación y la historia de emprendedores locales que construyen una industria de valor agregado desde cero.",
+		},
+		excerpt: {
+			en: "Value addition, export opportunities, and the entrepreneurs shaping Burundi's avocado future.",
+			fr: "Valeur ajoutée, opportunités d'exportation et les entrepreneurs qui façonnent l'avenir de l'avocat au Burundi.",
+			ar: "القيمة المضافة وفرص التصدير ورواد الأعمال الذين يشكلون مستقبل الأفوكادو في بوروندي.",
+			es: "Valor agregado, oportunidades de exportación y los emprendedores que dan forma al futuro del aguacate en Burundi.",
+		},
+		cover: "/images/articles/avocado-oil.jpg",
+		date: "2025-02-16",
+		videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
+		content: {
+			en: `# Burundi's Avocado Oil Revolution: From Local Fruit to Global Export
 
 In the rolling hills of Karusi province, a quiet transformation is taking place. Burundi, long known for its coffee and tea, is emerging as a serious player in the global avocado oil market. With support from international development programs and a new generation of entrepreneurial farmers, the country is turning its abundant avocado harvests into high-value oil for cooking, cosmetics, and wellness products.
 
@@ -713,49 +707,49 @@ For investors, buyers, and partners, Burundi's avocado oil sector offers entry i
 ---
 
 *This article draws on market research from 6Wresearch, Statista, EU-EAC MARKUP II program documents, and interviews with Burundian entrepreneurs. Market conditions evolve rapidly; consult current sources and local advisors before making business decisions.*`,
-		fr: `# La Révolution de l'Huile d'Avocat au Burundi : Du Fruit Local à l'Exportation Mondiale
+			fr: `# La Révolution de l'Huile d'Avocat au Burundi : Du Fruit Local à l'Exportation Mondiale
 
-[French content here - would be a translation of the English content]`,
-		ar: `# ثورة زيت الأفوكادو في بوروندي: من الفاكهة المحلية إلى التصدير العالمي
+[French content here]`,
+			ar: `# ثورة زيت الأفوكادو في بوروندي: من الفاكهة المحلية إلى التصدير العالمي
 
-[Arabic content here - would be a translation of the English content]`,
-		es: `# La Revolución del Aceite de Aguacate en Burundi: De Fruta Local a Exportación Global
+[Arabic content here]`,
+			es: `# La Revolución del Aceite de Aguacate en Burundi: De Fruta Local a Exportación Global
 
-[Spanish content here - would be a translation of the English content]`,
+[Spanish content here]`,
+		},
 	},
-},
 	{
-	id: "article-3",
-	slug: "africa-it-professionals-platform",
-	title: {
-		en: "Building the Bridge: Developing a Platform for IT Professionals in Africa",
-		fr: "Construire le Pont : Développer une Plateforme pour les Professionnels IT en Afrique",
-		ar: "بناء الجسر: تطوير منصة للمتخصصين في تكنولوجيا المعلومات في أفريقيا",
-		es: "Construyendo el Puente: Desarrollando una Plataforma para Profesionales de TI en África",
-	},
-	caption: {
-		en: "A strategic framework for connecting African tech talent to global opportunities.",
-		fr: "Un cadre stratégique pour connecter les talents tech africains aux opportunités mondiales.",
-		ar: "إطار استراتيجي لربط المواهب التقنية الأفريقية بالفرص العالمية.",
-		es: "Un marco estratégico para conectar el talento tecnológico africano con oportunidades globales.",
-	},
-	description: {
-		en: "A comprehensive exploration of how to build a sustainable platform that develops, connects, and empowers Africa's IT professionals—drawing on successful models from across the continent and insights from global industry leaders.",
-		fr: "Une exploration complète de la façon de construire une plateforme durable qui développe, connecte et autonomise les professionnels IT d'Afrique—s'inspirant de modèles réussis à travers le continent et des perspectives de leaders mondiaux de l'industrie.",
-		ar: "استكشاف شامل لكيفية بناء منصة مستدامة تعمل على تطوير وربط وتمكين متخصصي تكنولوجيا المعلومات في أفريقيا - بالاستناد إلى نماذج ناجحة من جميع أنحاء القارة ورؤى من قادة الصناعة العالميين.",
-		es: "Una exploración integral de cómo construir una plataforma sostenible que desarrolle, conecte y empodere a los profesionales de TI de África—basándose en modelos exitosos de todo el continente y perspectivas de líderes mundiales de la industria.",
-	},
-	excerpt: {
-		en: "Strategic insights from Andela, ImoTalentHub, One Dev, and others on building platforms that work.",
-		fr: "Perspectives stratégiques d'Andela, ImoTalentHub, One Dev et d'autres sur la construction de plateformes qui fonctionnent.",
-		ar: "رؤى استراتيجية من Andela و ImoTalentHub و One Dev وغيرهم حول بناء منصات ناجحة.",
-		es: "Perspectivas estratégicas de Andela, ImoTalentHub, One Dev y otros sobre cómo construir plataformas que funcionen.",
-	},
-	cover: "/images/articles/ict cover.jpg",
-	date: "2026-02-16",
-	videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
-	content: {
-		en: `# Building the Bridge: Developing a Platform for IT Professionals in Africa
+		id: "article-3",
+		slug: "africa-it-professionals-platform",
+		title: {
+			en: "Building the Bridge: Developing a Platform for IT Professionals in Africa",
+			fr: "Construire le Pont : Développer une Plateforme pour les Professionnels IT en Afrique",
+			ar: "بناء الجسر: تطوير منصة للمتخصصين في تكنولوجيا المعلومات في أفريقيا",
+			es: "Construyendo el Puente: Desarrollando una Plataforma para Profesionales de TI en África",
+		},
+		caption: {
+			en: "A strategic framework for connecting African tech talent to global opportunities.",
+			fr: "Un cadre stratégique pour connecter les talents tech africains aux opportunités mondiales.",
+			ar: "إطار استراتيجي لربط المواهب التقنية الأفريقية بالفرص العالمية.",
+			es: "Un marco estratégico para conectar el talento tecnológico africano con oportunidades globales.",
+		},
+		description: {
+			en: "A comprehensive exploration of how to build a sustainable platform that develops, connects, and empowers Africa's IT professionals—drawing on successful models from across the continent and insights from global industry leaders.",
+			fr: "Une exploration complète de la façon de construire une plateforme durable qui développe, connecte et autonomise les professionnels IT d'Afrique—s'inspirant de modèles réussis à travers le continent et des perspectives de leaders mondiaux de l'industrie.",
+			ar: "استكشاف شامل لكيفية بناء منصة مستدامة تعمل على تطوير وربط وتمكين متخصصي تكنولوجيا المعلومات في أفريقيا - بالاستناد إلى نماذج ناجحة من جميع أنحاء القارة ورؤى من قادة الصناعة العالميين.",
+			es: "Una exploración integral de cómo construir una plataforma sostenible que desarrolle, conecte y empodere a los profesionales de TI de África—basándose en modelos exitosos de todo el continente y perspectivas de líderes mundiales de la industria.",
+		},
+		excerpt: {
+			en: "Strategic insights from Andela, ImoTalentHub, One Dev, and others on building platforms that work.",
+			fr: "Perspectives stratégiques d'Andela, ImoTalentHub, One Dev et d'autres sur la construction de plateformes qui fonctionnent.",
+			ar: "رؤى استراتيجية من Andela و ImoTalentHub و One Dev وغيرهم حول بناء منصات ناجحة.",
+			es: "Perspectivas estratégicas de Andela, ImoTalentHub, One Dev y otros sobre cómo construir plataformas que funcionen.",
+		},
+		cover: "/images/articles/ict cover.jpg",
+		date: "2026-02-16",
+		videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
+		content: {
+			en: `# Building the Bridge: Developing a Platform for IT Professionals in Africa
 
 Africa stands at a digital inflection point. With the world's youngest population and fastest-growing workforce, the continent is poised to become a global hub for technology talent. Yet the gap between potential and participation remains vast: despite a population exceeding 1.4 billion, Africa currently has fewer than one million software developers [citation:7].
 
@@ -1030,17 +1024,17 @@ The question is not whether Africa will produce world-class technology talent. T
 ---
 
 *This article draws on case studies and data from Andela, Linux Foundation Education, CNCF, ImoTalentHub, One Dev, wedevelopers, AyaHQ, UEW, Moniepoint, Interswitch, FiguresHub Africa, Zoho, UNDP, and Africell. Market conditions and initiatives evolve rapidly; consult current sources before making business decisions.*`,
-		fr: `# Construire le Pont : Développer une Plateforme pour les Professionnels IT en Afrique
+			fr: `# Construire le Pont : Développer une Plateforme pour les Professionnels IT en Afrique
 
-[French content here - would be a translation of the English content]`,
-		ar: `# بناء الجسر: تطوير منصة للمتخصصين في تكنولوجيا المعلومات في أفريقيا
+[French content here]`,
+			ar: `# بناء الجسر: تطوير منصة للمتخصصين في تكنولوجيا المعلومات في أفريقيا
 
-[Arabic content here - would be a translation of the English content]`,
-		es: `# Construyendo el Puente: Desarrollando una Plataforma para Profesionales de TI en África
+[Arabic content here]`,
+			es: `# Construyendo el Puente: Desarrollando una Plataforma para Profesionales de TI en África
 
-[Spanish content here - would be a translation of the English content]`,
+[Spanish content here]`,
+		},
 	},
-}
 ];
 // Replace your existing events array with this consolidated version
 
