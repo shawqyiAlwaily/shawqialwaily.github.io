@@ -63,6 +63,7 @@ const Header = () => {
 		{ href: "/articles", label: t("nav.articles") },
 		{ href: "/books", label: t("nav.books") },
 		{ href: "/events", label: "Events & Photos" },
+		{ href: "/cv", label: "CV" },    
 	];
 
 	const navigate = useNavigate();

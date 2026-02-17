@@ -15,6 +15,7 @@ import ArticleDetail from "./pages/ArticleDetail";
 import Events from "./pages/Events"; // Add this
 import EventDetail from "./pages/EventDetail"; // Add this
 import NotFound from "./pages/NotFound";
+import CV from "./pages/CV";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
 						<Route path="/work" element={<Work />} />
 						<Route path="/work/:id" element={<WorkDetail />} />
 						<Route path="*" element={<NotFound />} />
+						<Route path="/cv" element={<CV />} />
 					</Routes>
 				</BrowserRouter>
 			</TooltipProvider>
