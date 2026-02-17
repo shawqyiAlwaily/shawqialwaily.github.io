@@ -12,10 +12,10 @@ import Articles from "./pages/Articles";
 import Work from "./pages/Work";
 import WorkDetail from "./pages/WorkDetail";
 import ArticleDetail from "./pages/ArticleDetail";
-import Events from "./pages/Events"; // Add this
-import EventDetail from "./pages/EventDetail"; // Add this
-import NotFound from "./pages/NotFound";
+import Events from "./pages/Events";
+import EventDetail from "./pages/EventDetail";
 import CV from "./pages/CV";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -33,13 +33,13 @@ const App = () => (
 						<Route path="/books/:slug" element={<BookDetail />} />
 						<Route path="/articles" element={<Articles />} />
 						<Route path="/articles/:slug" element={<ArticleDetail />} />
-						<Route path="/events" element={<Events />} /> {/* Add this */}
-						<Route path="/events/:slug" element={<EventDetail />} />{" "}
-						{/* Add this */}
+						<Route path="/events" element={<Events />} />
+						<Route path="/events/:slug" element={<EventDetail />} />
 						<Route path="/work" element={<Work />} />
 						<Route path="/work/:id" element={<WorkDetail />} />
-						<Route path="*" element={<NotFound />} />
 						<Route path="/cv" element={<CV />} />
+						{/* Catch-all must be last */}
+						<Route path="*" element={<NotFound />} />
 					</Routes>
 				</BrowserRouter>
 			</TooltipProvider>
