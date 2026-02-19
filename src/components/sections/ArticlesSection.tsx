@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { articles } from "@/data/content";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { ArrowRight, ArrowLeft } from "lucide-react"; // ← Add these icons
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -55,7 +56,7 @@ const ArticleCard = ({ title, caption, link, delay }: any) => {
 };
 
 const ArticlesSection = () => {
-	const { t, language } = useLanguage();
+	const { t, language, isRTL } = useLanguage(); // ← get isRTL
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const [visible, setVisible] = useState(false);
 	const text = copy[language as keyof typeof copy];
@@ -69,9 +70,7 @@ const ArticlesSection = () => {
 		return () => observer.disconnect();
 	}, []);
 
-	const displayArticles = [...articles].sort(
-		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-	);
+	const displayArticles = articles.slice(0, 3); // keep only 3
 
 	return (
 		<section
@@ -118,6 +117,32 @@ const ArticlesSection = () => {
 						/>
 					))}
 				</div>
+
+				{/* 🔽 New "View all articles" button – same style as events */}
+				<motion.div
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: false }}
+					transition={{ duration: 0.6, delay: 0.4 }}
+					className="mt-12 text-center"
+				>
+					<Link
+						to="/articles"
+						className={`inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-full text-white font-medium transition-all group`}
+					>
+						{isRTL ? (
+							<>
+								عرض كل المقالات
+								<ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
+							</>
+						) : (
+							<>
+								View all articles
+								<ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+							</>
+						)}
+					</Link>
+				</motion.div>
 			</div>
 		</section>
 	);
