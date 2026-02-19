@@ -26,7 +26,7 @@ const copy: Record<Locale, { kicker: string; tagline: string }> = {
 
 const ArticleCard = ({ title, caption, link, delay }: any) => {
 	const { isRTL } = useLanguage();
-	
+
 	return (
 		<Link
 			to={link}
@@ -43,12 +43,12 @@ const ArticleCard = ({ title, caption, link, delay }: any) => {
 			<h3 className="text-lg md:text-xl font-semibold text-white leading-tight mt-2">
 				{title}
 			</h3>
-			<p className="text-slate-200/80 mt-2 text-sm line-clamp-3">
-				{caption}
-			</p>
-			<span className={`inline-flex items-center gap-1 mt-4 text-cyan-200/80 transition-transform duration-300 group-hover:translate-x-1 ${isRTL ? 'group-hover:-translate-x-1' : ''}`}>
-				Read more {!isRTL && '→'}
-				{isRTL && '←'}
+			<p className="text-slate-200/80 mt-2 text-sm line-clamp-3">{caption}</p>
+			<span
+				className={`inline-flex items-center gap-1 mt-4 text-cyan-200/80 transition-transform duration-300 group-hover:translate-x-1 ${isRTL ? "group-hover:-translate-x-1" : ""}`}
+			>
+				Read more {!isRTL && "→"}
+				{isRTL && "←"}
 			</span>
 		</Link>
 	);
@@ -63,13 +63,15 @@ const ArticlesSection = () => {
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => setVisible(entry.isIntersecting),
-			{ threshold: 0.2 }
+			{ threshold: 0.2 },
 		);
 		if (sectionRef.current) observer.observe(sectionRef.current);
 		return () => observer.disconnect();
 	}, []);
 
-	const displayArticles = articles.slice(0, 3);
+	const displayArticles = [...articles].sort(
+		(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+	);
 
 	return (
 		<section
@@ -108,7 +110,9 @@ const ArticlesSection = () => {
 						<ArticleCard
 							key={article.id}
 							title={article.title[language as keyof typeof article.title]}
-							caption={article.caption[language as keyof typeof article.caption]}
+							caption={
+								article.caption[language as keyof typeof article.caption]
+							}
 							link={`/articles/${article.slug}`}
 							delay={0.12 + idx * 0.08}
 						/>
