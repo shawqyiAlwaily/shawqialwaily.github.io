@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile"; // adjust path if needed
 
 type Service = {
 	id: string;
@@ -92,10 +93,11 @@ const services: Service[] = [
 ];
 
 const gradientBg =
-  "bg-[radial-gradient(circle_at_20%_20%,rgba(124,193,255,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(155,127,211,0.12),transparent_32%),linear-gradient(140deg,#4a2c6e,#5c3a8a,#7c5f9e)]";
+	"bg-[radial-gradient(circle_at_20%_20%,rgba(124,193,255,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(155,127,211,0.12),transparent_32%),linear-gradient(140deg,#4a2c6e,#5c3a8a,#7c5f9e)]";
 
 const AuthorityMetricsSection = () => {
 	const [activeId, setActiveId] = useState<string | null>(null);
+	const isMobile = useIsMobile(); // detect mobile
 
 	const orderedServices = useMemo(() => services, []);
 
@@ -139,10 +141,11 @@ const AuthorityMetricsSection = () => {
 								aria-expanded={isActive}
 								onClick={() => setActiveId(isActive ? null : service.id)}
 								className="group relative w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg p-6 text-left shadow-xl transition duration-500"
-								initial={{ opacity: 0, y: 40 }}
-								whileInView={{ opacity: 1, y: 0 }}
-								viewport={{ once: false, amount: 0.35 }}
-								whileHover={{ y: -10 }}
+								// ── conditional animations for mobile ──
+								initial={isMobile ? false : { opacity: 0, y: 40 }}
+								whileInView={isMobile ? {} : { opacity: 1, y: 0 }}
+								viewport={{ once: true, amount: 0.35 }}
+								whileHover={isMobile ? {} : { y: -10 }}
 								transition={{
 									duration: 0.55,
 									delay: idx * 0.12,
@@ -172,7 +175,7 @@ const AuthorityMetricsSection = () => {
 											stroke="currentColor"
 											className="text-white/90"
 											initial={{ rotate: 0 }}
-											whileHover={{ rotate: 6 }}
+											whileHover={isMobile ? {} : { rotate: 6 }}
 											transition={{
 												type: "spring",
 												stiffness: 160,
