@@ -63,7 +63,7 @@ const Header = () => {
 		{ href: "/articles", label: t("nav.articles") },
 		{ href: "/books", label: t("nav.books") },
 		{ href: "/events", label: "Events & Photos" },
-		{ href: "/cv", label: "CV" },    
+		{ href: "/cv", label: "CV" },
 	];
 
 	const navigate = useNavigate();
@@ -78,7 +78,7 @@ const Header = () => {
 			className={cn(
 				"fixed top-0 left-0 right-0 z-40 transition-all duration-500",
 				isScrolled
-					? "bg-[#5c3a8a]/90 backdrop-blur-xl border-b border-white/10 shadow-lg py-3" // Changed to purple
+					? "bg-[#5c3a8a]/90 backdrop-blur-xl border-b border-white/10 shadow-lg py-3"
 					: "bg-transparent py-6",
 			)}
 		>
@@ -90,10 +90,8 @@ const Header = () => {
 					<div ref={menuRef} className="relative">
 						<button
 							className={cn(
-								"p-2 rounded-lg transition-all duration-300 text-white", // Changed text to white
-								isScrolled
-									? "hover:bg-white/10" // Changed to white with opacity
-									: "hover:bg-white/10",
+								"p-2 rounded-lg transition-all duration-300 text-white",
+								isScrolled ? "hover:bg-white/10" : "hover:bg-white/10",
 							)}
 							onClick={() => setIsMenuOpen(!isMenuOpen)}
 							aria-label="Toggle menu"
@@ -101,13 +99,13 @@ const Header = () => {
 							<div className="relative w-6 h-6">
 								<Menu
 									className={cn(
-										"w-6 h-6 absolute inset-0 transition-all duration-300 text-white", // Changed to white
+										"w-6 h-6 absolute inset-0 transition-all duration-300 text-white",
 										isMenuOpen ? "opacity-0 rotate-90" : "opacity-100 rotate-0",
 									)}
 								/>
 								<X
 									className={cn(
-										"w-6 h-6 absolute inset-0 transition-all duration-300 text-white", // Changed to white
+										"w-6 h-6 absolute inset-0 transition-all duration-300 text-white",
 										isMenuOpen
 											? "opacity-100 rotate-0"
 											: "opacity-0 -rotate-90",
@@ -121,14 +119,14 @@ const Header = () => {
 							<>
 								{/* Backdrop */}
 								<div
-									className="fixed inset-0 z-40 bg-[#2a1b3d]/80 backdrop-blur-sm" // Changed to dark purple backdrop
+									className="fixed inset-0 z-40 bg-[#2a1b3d]/80 backdrop-blur-sm"
 									onClick={() => setIsMenuOpen(false)}
 								/>
 
-								{/* Panel - Changed to purple gradient */}
+								{/* Panel - now scrollable and with max height */}
 								<div
 									className={cn(
-										"fixed top-0 left-0 right-0 z-50 h-[80vh] bg-gradient-to-br from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e] text-white shadow-lg transition-transform duration-500 ease-out", // Changed to purple gradient
+										"fixed top-0 left-0 right-0 z-50 max-h-[90vh] overflow-y-auto bg-gradient-to-br from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e] text-white shadow-lg transition-transform duration-500 ease-out",
 										"animate-slide-down",
 										"border-b border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.25)]",
 									)}
@@ -138,134 +136,144 @@ const Header = () => {
 									<button
 										onClick={() => setIsMenuOpen(false)}
 										aria-label="Close menu"
-										className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center shadow-md transition-colors"
+										className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center shadow-md transition-colors z-10"
 									>
 										<X className="w-6 h-6" />
 									</button>
 
-									<div className="h-full container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-0">
-										{/* Left: Brand & Social */}
-										<div
-											className={cn(
-												"h-full flex flex-col justify-between py-10 md:py-12",
-												isRTL ? "md:pl-10" : "md:pr-10",
-											)}
-										>
-											<div>
-												<h2 className="font-playfair text-3xl md:text-5xl font-bold text-white">
-													Shawqi Alwaily
-												</h2>
-											</div>
-											<div className="flex flex-col gap-3 text-white/80">
-												<a
-													href="http://x.com/shawky39851988"
-													target="_blank"
-													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
-												>
-													<Twitter className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
-													<span className="text-white/90 group-hover:text-white">
-														X
-													</span>
-												</a>
-
-												<a
-													href="https://www.facebook.com/shawki.mohammed.1"
-													target="_blank"
-													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
-												>
-													<Facebook className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
-													<span className="text-white/90 group-hover:text-white">
-														Facebook
-													</span>
-												</a>
-
-												<a
-													href={personalInfo.socialLinks.linkedin}
-													target="_blank"
-													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
-												>
-													<Linkedin className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
-													<span className="text-white/90 group-hover:text-white">
-														LinkedIn
-													</span>
-												</a>
-
-												{/* Telegram Link */}
-												<a
-													href="https://t.me/+251912601933"
-													target="_blank"
-													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
-												>
-													<Send className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
-													<span className="text-white/90 group-hover:text-white">
-														Telegram
-													</span>
-												</a>
-
-												<a
-													href={personalInfo.socialLinks.academia}
-													target="_blank"
-													rel="noopener noreferrer"
-													className="inline-flex items-center gap-2 hover:text-white transition-colors group"
-												>
-													<BookOpen className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
-													<span className="text-white/90 group-hover:text-white">
-														Academia
-													</span>
-												</a>
-											</div>
-										</div>
-
-										{/* Right: Nav & Contact */}
-										<div
-											className={cn(
-												"py-10 md:py-12 flex flex-col gap-10 md:gap-12 text-left",
-												isRTL ? "md:border-r md:pr-12" : "md:border-l md:pl-12",
-												"border-white/20",
-											)}
-										>
-											<nav className="grid gap-5 md:gap-6">
-												{navItems.map((item) => (
-													<button
-														key={item.href}
-														onClick={() => scrollToSection(item.href)}
-														className="text-left text-2xl md:text-4xl font-semibold md:font-bold text-white/90 hover:text-white transition-colors"
-													>
-														{item.label}
-													</button>
-												))}
-											</nav>
-
-											<div className="pt-4">
-												<div className="text-sm uppercase tracking-[0.25em] text-cyan-200/70 mb-3">
-													Contact
+									<div className="container mx-auto px-4 md:px-8 py-10 md:py-12">
+										<div className="grid md:grid-cols-[1fr_2fr] gap-0">
+											{/* Left: Brand & Social */}
+											<div
+												className={cn(
+													"flex flex-col justify-between gap-8 md:gap-12",
+													isRTL ? "md:pl-10" : "md:pr-10",
+												)}
+											>
+												<div>
+													<h2 className="font-playfair text-3xl md:text-5xl font-bold text-white">
+														Shawqi Alwaily
+													</h2>
 												</div>
-												<div className="flex flex-col gap-2 text-lg">
+												<div className="flex flex-col gap-3 text-white/80">
 													<a
-														href="tel:+201002307197"
-														className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
+														href="http://x.com/shawky39851988"
+														target="_blank"
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 hover:text-white transition-colors group"
 													>
-														<Phone className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors" />
-														<span>+20 100 230 7197</span>
+														<Twitter className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+														<span className="text-white/90 group-hover:text-white">
+															X
+														</span>
 													</a>
+
 													<a
-														href="tel:+251912601933"
-														className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
+														href="https://www.facebook.com/shawki.mohammed.1"
+														target="_blank"
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 hover:text-white transition-colors group"
 													>
-														<Phone className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors" />
-														<span>+251 912 601 933</span>
+														<Facebook className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+														<span className="text-white/90 group-hover:text-white">
+															Facebook
+														</span>
 													</a>
+
 													<a
-														href="mailto:shawqialwaily@outlook.com"
-														className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
+														href={personalInfo.socialLinks.linkedin}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 hover:text-white transition-colors group"
 													>
-														<Mail className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors" />
-														<span>shawqialwaily@outlook.com</span>
+														<Linkedin className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+														<span className="text-white/90 group-hover:text-white">
+															LinkedIn
+														</span>
 													</a>
+
+													{/* Telegram Link */}
+													<a
+														href="https://t.me/+251912601933"
+														target="_blank"
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 hover:text-white transition-colors group"
+													>
+														<Send className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+														<span className="text-white/90 group-hover:text-white">
+															Telegram
+														</span>
+													</a>
+
+													<a
+														href={personalInfo.socialLinks.academia}
+														target="_blank"
+														rel="noopener noreferrer"
+														className="inline-flex items-center gap-2 hover:text-white transition-colors group"
+													>
+														<BookOpen className="w-5 h-5 text-cyan-200 group-hover:text-white transition-colors" />
+														<span className="text-white/90 group-hover:text-white">
+															Academia
+														</span>
+													</a>
+												</div>
+											</div>
+
+											{/* Right: Nav & Contact */}
+											<div
+												className={cn(
+													"flex flex-col gap-10 md:gap-12",
+													isRTL
+														? "md:border-r md:pr-12"
+														: "md:border-l md:pl-12",
+													"border-white/20 mt-8 md:mt-0",
+												)}
+											>
+												<nav className="grid gap-5 md:gap-6">
+													{navItems.map((item) => (
+														<button
+															key={item.href}
+															onClick={() => scrollToSection(item.href)}
+															className="text-left text-2xl md:text-4xl font-semibold md:font-bold text-white/90 hover:text-white transition-colors"
+														>
+															{item.label}
+														</button>
+													))}
+												</nav>
+
+												<div className="pt-4">
+													<div className="text-sm uppercase tracking-[0.25em] text-cyan-200/70 mb-3">
+														Contact
+													</div>
+													<div className="flex flex-col gap-2 text-base md:text-lg break-words">
+														<a
+															href="tel:+201002307197"
+															className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
+														>
+															<Phone className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors shrink-0" />
+															<span className="break-all">
+																+20 100 230 7197
+															</span>
+														</a>
+														<a
+															href="tel:+251912601933"
+															className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
+														>
+															<Phone className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors shrink-0" />
+															<span className="break-all">
+																+251 912 601 933
+															</span>
+														</a>
+														<a
+															href="mailto:shawqialwaily@outlook.com"
+															className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors group"
+														>
+															<Mail className="w-4 h-4 text-cyan-200 group-hover:text-white transition-colors shrink-0" />
+															<span className="break-all">
+																shawqialwaily@outlook.com
+															</span>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
