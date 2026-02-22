@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useIsMobile } from "@/hooks/use-mobile"; // adjust path if needed
 
 type LocalizedText = Record<"en" | "fr" | "ar" | "es", string>;
 
@@ -162,6 +163,7 @@ const BridgeMark = ({ active }: { active: boolean }) => (
 
 const BeliefBlocksSection = () => {
 	const { language } = useLanguage();
+	const isMobile = useIsMobile(); // ✅ use the hook
 	const [activeParagraph, setActiveParagraph] = useState(0);
 	const blockRefs = useRef<(HTMLElement | null)[]>([]);
 	const activeRef = useRef(0);
@@ -183,7 +185,6 @@ const BeliefBlocksSection = () => {
 
 	useEffect(() => {
 		const raf = requestAnimationFrame(() => {
-			// Re-run the scroll handler after language/content changes so the active block is recalculated
 			window.dispatchEvent(new Event("scroll"));
 		});
 		return () => cancelAnimationFrame(raf);
@@ -192,8 +193,7 @@ const BeliefBlocksSection = () => {
 	useEffect(() => {
 		const updateActive = () => {
 			const mid = window.innerHeight / 2;
-			// Widen the active band so blocks react earlier in the viewport (helps top paragraphs animate)
-			const bandTop = mid - window.innerHeight * 0.22; // 44% tall band
+			const bandTop = mid - window.innerHeight * 0.22;
 			const bandBottom = mid + window.innerHeight * 0.22;
 
 			let candidate = activeRef.current;
@@ -217,20 +217,18 @@ const BeliefBlocksSection = () => {
 				}
 			});
 
-			// Prefer band candidate when available
 			if (bandCandidate !== -1) {
 				candidate = bandCandidate;
 			}
 
 			if (candidate !== activeRef.current) {
-				// Hysteresis: only switch if significantly closer or enough time passed
 				const currentBlock = blockRefs.current[activeRef.current];
 				let currentDistance = Number.POSITIVE_INFINITY;
 				if (currentBlock) {
 					const r = currentBlock.getBoundingClientRect();
 					currentDistance = Math.abs(r.top + r.height / 2 - mid);
 				}
-				const margin = 60; // px closer than current
+				const margin = 60;
 				const now = performance.now();
 				const timeOk = now - lastSwitchTime.current > 180;
 				const closerOk = candidateDistance + margin < currentDistance;
@@ -345,11 +343,11 @@ const BeliefBlocksSection = () => {
 								/>
 
 								<div className="relative z-10 flex h-full flex-col justify-center px-6 py-12 sm:px-9 md:px-14">
+									{/* ✅ Fix: disable maxHeight on mobile */}
 									<div
 										className="relative"
 										style={{
-											overflow: "hidden",
-											maxHeight: isActive ? "none" : "10.5rem",
+											maxHeight: !isMobile && !isActive ? "10.5rem" : "none",
 										}}
 									>
 										<motion.p
