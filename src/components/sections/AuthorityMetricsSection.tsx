@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useIsMobile } from "@/hooks/use-mobile"; // adjust path if needed
+import { useIsMobile } from "@/hooks/use-mobile";
 
 type Service = {
 	id: string;
@@ -97,7 +97,7 @@ const gradientBg =
 
 const AuthorityMetricsSection = () => {
 	const [activeId, setActiveId] = useState<string | null>(null);
-	const isMobile = useIsMobile(); // detect mobile
+	const isMobile = useIsMobile();
 
 	const orderedServices = useMemo(() => services, []);
 
@@ -142,15 +142,22 @@ const AuthorityMetricsSection = () => {
 								onClick={() => setActiveId(isActive ? null : service.id)}
 								className="group relative w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg p-6 text-left shadow-xl transition duration-500"
 								// ── conditional animations for mobile ──
-								initial={isMobile ? false : { opacity: 0, y: 40 }}
-								whileInView={isMobile ? {} : { opacity: 1, y: 0 }}
-								viewport={{ once: true, amount: 0.35 }}
-								whileHover={isMobile ? {} : { y: -10 }}
-								transition={{
-									duration: 0.55,
-									delay: idx * 0.12,
-									ease: [0.4, 0, 0.2, 1],
-								}}
+								{...(isMobile
+									? {
+											// Mobile: no entry animation, just final state
+											animate: { opacity: 1, y: 0 },
+										}
+									: {
+											initial: { opacity: 0, y: 40 },
+											whileInView: { opacity: 1, y: 0 },
+											viewport: { once: true, amount: 0.35 },
+											whileHover: { y: -10 },
+											transition: {
+												duration: 0.55,
+												delay: idx * 0.12,
+												ease: [0.4, 0, 0.2, 1],
+											},
+										})}
 							>
 								<div
 									className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
