@@ -1455,6 +1455,15 @@ export const events = [
 			es: "Reunión con Moussa Faki",
 			}
 		},
+			{
+			url: "/images/events/event66.jpg",
+			caption: {
+				en: "Meeting with Moussa Faki",
+			fr: "Rencontre avec Moussa Faki",
+			ar: "لقاء مع موسى فقي",
+			es: "Reunión con Moussa Faki",
+			}
+		},
 		],
 	},
 	
