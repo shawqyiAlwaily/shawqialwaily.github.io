@@ -1481,7 +1481,7 @@ export const events = [
 		ar: "شارك في احتفال اليوم العالمي للمرأة الذي استضافه مقر الاتحاد الأفريقي، بحضور رئيس مفوضية الاتحاد الأفريقي ونائب الرئيس. سلط الحدث الضوء على القيادة النسائية، والتقدم المحرز في المساواة بين الجنسين في جميع أنحاء القارة، والتزام الاتحاد الأفريقي بتمكين النساء والفتيات في إطار أجندة 2063.",
 		es: "Participó en la celebración del Día Internacional de la Mujer organizada en la sede de la Unión Africana, con la presencia del Presidente y Vicepresidente de la CUA. El evento destacó el liderazgo femenino, el progreso en igualdad de género en todo el continente y el compromiso de la UA de empoderar a mujeres y niñas en el marco de la Agenda 2063.",
 	},
-	cover: "/images/events/event7.jpg",
+	cover: "/images/events/EVENT 7.jpeg",
 	date: "2026-03-08",
 	location: {
 		en: "Addis Ababa, Ethiopia",
