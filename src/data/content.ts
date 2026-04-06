@@ -1457,8 +1457,41 @@ export const events = [
 		},
 			
 		],
+		
 	},
-	
+
+{
+	id: "event-7",
+	slug: "international-womens-day-au-headquarters-addis-ababa",
+	title: {
+		en: "International Women's Day Celebration with AUC Chairperson and Deputy Chairperson",
+		fr: "Célébration de la Journée internationale des femmes avec le Président et le Vice-président de la CUA",
+		ar: "احتفال اليوم العالمي للمرأة مع رئيس مفوضية الاتحاد الأفريقي ونائب الرئيس",
+		es: "Celebración del Día Internacional de la Mujer con el Presidente y Vicepresidente de la CUA",
+	},
+	caption: {
+		en: "AUC Chairperson and Deputy Chairperson mark International Women's Day at AU headquarters",
+		fr: "Le Président et le Vice-président de la CUA marquent la Journée internationale des femmes au siège de l'UA",
+		ar: "رئيس مفوضية الاتحاد الأفريقي ونائب الرئيس يحتفلان باليوم العالمي للمرأة في مقر الاتحاد الأفريقي",
+		es: "El Presidente y Vicepresidente de la CUA conmemoran el Día Internacional de la Mujer en la sede de la UA",
+	},
+	description: {
+		en: "Participated in the International Women's Day celebration hosted at the African Union headquarters, with the presence of the AUC Chairperson and Deputy Chairperson. The event highlighted women's leadership, gender equality progress across the continent, and the AU's commitment to empowering women and girls under Agenda 2063.",
+		fr: "Participé à la célébration de la Journée internationale des femmes organisée au siège de l'Union africaine, en présence du Président et du Vice-président de la CUA. L'événement a mis en lumière le leadership des femmes, les progrès en matière d'égalité des genres sur le continent et l'engagement de l'UA à autonomiser les femmes et les filles dans le cadre de l'Agenda 2063.",
+		ar: "شارك في احتفال اليوم العالمي للمرأة الذي استضافه مقر الاتحاد الأفريقي، بحضور رئيس مفوضية الاتحاد الأفريقي ونائب الرئيس. سلط الحدث الضوء على القيادة النسائية، والتقدم المحرز في المساواة بين الجنسين في جميع أنحاء القارة، والتزام الاتحاد الأفريقي بتمكين النساء والفتيات في إطار أجندة 2063.",
+		es: "Participó en la celebración del Día Internacional de la Mujer organizada en la sede de la Unión Africana, con la presencia del Presidente y Vicepresidente de la CUA. El evento destacó el liderazgo femenino, el progreso en igualdad de género en todo el continente y el compromiso de la UA de empoderar a mujeres y niñas en el marco de la Agenda 2063.",
+	},
+	cover: "/images/events/event7.jpg",
+	date: "2026-03-08",
+	location: {
+		en: "Addis Ababa, Ethiopia",
+		fr: "Addis-Abeba, Éthiopie",
+		ar: "أديس أبابا، إثيوبيا",
+		es: "Adís Abeba, Etiopía",
+	},
+	images: [],
+}
+
 ];
 
 export const meetings = [
