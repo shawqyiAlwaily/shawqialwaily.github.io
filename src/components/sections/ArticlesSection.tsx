@@ -97,7 +97,35 @@ const ArticlesSection = () => {
 					<h2 className="text-3xl md:text-5xl font-semibold text-white mt-3">
 						{t("articles.title")}
 					</h2>
-					<p className="text-slate-200/80 mt-3 max-w-2xl">{text.tagline}</p>
+					<p className="text-slate-200/80 mt-3 max-w-2xl mb-8">{text.tagline}</p>
+				</motion.div>
+
+				<motion.div 
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: false }}
+					transition={{ duration: 0.6, delay: 0.2 }}
+					className="bg-white/5 border border-cyan-500/30 rounded-2xl p-6 md:p-8 backdrop-blur-sm flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-300 hover:bg-white/10 hover:border-cyan-400/50"
+				>
+					<div className="flex-1">
+						<h3 className="text-xl md:text-2xl font-semibold text-white mb-2 flex items-center gap-2">
+							<span className="text-2xl">🎓</span> {isRTL ? "منشورات أكاديمية" : "Academic Publications"}
+						</h3>
+						<p className="text-slate-300">
+							{isRTL 
+								? "يمكن العثور على جميع المقالات والأبحاث الأكاديمية كاملة على حسابي الرسمي في موقع Academia.edu"
+								: "All of my comprehensive academic articles and published research papers can be found on my official Academia.edu profile."}
+						</p>
+					</div>
+					<a
+						href="https://independent.academia.edu/shawkyAbdelgayed"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={`px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-xl transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap ${isRTL ? "flex-row-reverse" : ""}`}
+					>
+						{isRTL ? "زيارة المنصة" : "Visit Academia.edu"}
+						{isRTL ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
+					</a>
 				</motion.div>
 
 				<div

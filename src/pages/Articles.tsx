@@ -48,6 +48,34 @@ const Articles = () => {
 					</p>
 				</div>
 
+				{/* Academia Notice */}
+				<motion.div 
+					initial={{ opacity: 0, y: 10 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.5 }}
+					className="mb-12 bg-white/5 border border-cyan-500/30 rounded-2xl p-6 md:p-8 backdrop-blur-sm flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-300 hover:bg-white/10 hover:border-cyan-400/50"
+				>
+					<div className="flex-1">
+						<h3 className="text-xl md:text-2xl font-semibold text-white mb-2 flex items-center gap-2">
+							<span className="text-2xl">🎓</span> {isRTL ? "منشورات أكاديمية" : "Academic Publications"}
+						</h3>
+						<p className="text-slate-300">
+							{isRTL 
+								? "يمكن العثور على جميع المقالات والأبحاث الأكاديمية كاملة على حسابي الرسمي في موقع Academia.edu"
+								: "All of my comprehensive academic articles and published research papers can be found on my official Academia.edu profile."}
+						</p>
+					</div>
+					<a
+						href="https://independent.academia.edu/shawkyAbdelgayed"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={`px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-xl transition-colors duration-300 flex items-center justify-center gap-2 whitespace-nowrap ${isRTL ? "flex-row-reverse" : ""}`}
+					>
+						{isRTL ? "زيارة المنصة" : "Visit Academia.edu"}
+						{isRTL ? <ArrowLeft className="w-4 h-4" /> : <ArrowRight className="w-4 h-4" />}
+					</a>
+				</motion.div>
+
 				{/* Articles Grid */}
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{sortedArticles.map((article, idx) => {
