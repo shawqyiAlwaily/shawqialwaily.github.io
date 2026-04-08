@@ -745,7 +745,7 @@ For investors, buyers, and partners, Burundi's avocado oil sector offers entry i
 			ar: "رؤى استراتيجية من Andela و ImoTalentHub و One Dev وغيرهم حول بناء منصات ناجحة.",
 			es: "Perspectivas estratégicas de Andela, ImoTalentHub, One Dev y otros sobre cómo construir plataformas que funcionen.",
 		},
-		cover: "/images/articles/ict cover.jpg",
+		cover: "/images/es/ict cover.jpg",
 		date: "2026-02-16",
 		videoUrl: "https://youtube.com/@shawqialwaily525?si=_4tvJuhgW_GYaKqk",
 		content: {

@@ -78,7 +78,7 @@ const Header = () => {
 			className={cn(
 				"fixed top-0 left-0 right-0 z-40 transition-all duration-500",
 				isScrolled
-					? "bg-[#5c3a8a]/90 backdrop-blur-xl border-b border-white/10 shadow-lg py-3"
+					? "bg-[#1f0d36]/80 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.5)] py-3"
 					: "bg-transparent py-6",
 			)}
 		>
@@ -119,16 +119,16 @@ const Header = () => {
 							<>
 								{/* Backdrop */}
 								<div
-									className="fixed inset-0 z-40 bg-[#2a1b3d]/80 backdrop-blur-sm"
+									className="fixed inset-0 z-40 bg-black/80 backdrop-blur-sm"
 									onClick={() => setIsMenuOpen(false)}
 								/>
 
 								{/* Panel - now scrollable and with max height */}
 								<div
 									className={cn(
-										"fixed top-0 left-0 right-0 z-50 max-h-[90vh] overflow-y-auto bg-gradient-to-br from-[#4a2c6e] via-[#5c3a8a] to-[#7c5f9e] text-white shadow-lg transition-transform duration-500 ease-out",
+										"fixed top-0 left-0 right-0 z-50 max-h-[90vh] overflow-y-auto bg-gradient-to-br from-[#321759] via-[#1f0d36] to-[#0b0416] text-white shadow-lg transition-transform duration-500 ease-out",
 										"animate-slide-down",
-										"border-b border-white/20 shadow-[0_20px_60px_rgba(0,0,0,0.25)]",
+										"border-b border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.5)]",
 									)}
 									role="dialog"
 									aria-modal="true"
