@@ -93,7 +93,7 @@ const services: Service[] = [
 ];
 
 const gradientBg =
-	"bg-[#1f0d36] bg-[radial-gradient(circle_at_20%_20%,rgba(167,139,250,0.08),transparent_35%),radial-gradient(circle_at_80%_0%,rgba(155,127,211,0.12),transparent_32%),linear-gradient(140deg,#321759,#1f0d36,#0b0416)]";
+	"bg-[#5c3a8a] bg-[radial-gradient(circle_at_22%_18%,rgba(103,232,249,0.14),transparent_38%),radial-gradient(circle_at_78%_64%,rgba(251,191,36,0.1),transparent_36%)] [background-image:linear-gradient(to_bottom,#4a2c6e,#5c3a8a,#7c5f9e)]";
 
 const AuthorityMetricsSection = () => {
 	const [activeId, setActiveId] = useState<string | null>(null);
@@ -106,8 +106,8 @@ const AuthorityMetricsSection = () => {
 			className={`relative text-white py-20 md:py-24 overflow-hidden ${gradientBg}`}
 		>
 			<div className="absolute inset-0 pointer-events-none" aria-hidden>
-				<div className="absolute left-1/2 top-12 -translate-x-1/2 w-[620px] h-[620px] bg-cyan-500/10 blur-3xl rounded-full" />
-				<div className="absolute -left-10 bottom-0 w-80 h-80 bg-sky-300/10 blur-3xl rounded-full" />
+				<div className="absolute left-1/2 top-12 -translate-x-1/2 w-[620px] h-[620px] bg-cyan-400/8 blur-3xl rounded-full" />
+				<div className="absolute -left-10 bottom-0 w-80 h-80 bg-amber-200/8 blur-3xl rounded-full" />
 			</div>
 
 			<div className="relative container mx-auto px-6 md:px-10">
@@ -218,7 +218,7 @@ const AuthorityMetricsSection = () => {
 									<div className="flex-1 space-y-2">
 										<div className="flex items-center justify-between gap-3">
 											<div>
-												<p className="text-sm uppercase tracking-[0.2em] text-cyan-50/70">
+												<p className="text-sm uppercase tracking-[0.2em] text-cyan-100/70">
 													{service.subtitle}
 												</p>
 												<h3 className="text-xl md:text-2xl font-semibold text-white">
@@ -229,7 +229,7 @@ const AuthorityMetricsSection = () => {
 												Discuss this service →
 											</span>
 										</div>
-										<p className="text-base text-slate-100/80 leading-relaxed">
+										<p className="text-base text-slate-200/85 leading-relaxed">
 											{service.description}
 										</p>
 									</div>
@@ -244,7 +244,7 @@ const AuthorityMetricsSection = () => {
 											transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
 											className="rounded-xl border border-white/10 bg-white/5 px-5 py-4"
 										>
-											<p className="text-sm md:text-base text-slate-100/85 leading-relaxed">
+											<p className="text-sm md:text-base text-slate-200/85 leading-relaxed">
 												{service.expanded}
 											</p>
 											<div className="mt-4 flex items-center justify-between">
@@ -272,7 +272,7 @@ const AuthorityMetricsSection = () => {
 
 				<div className="mt-12 md:mt-14 flex flex-col md:flex-row md:items-center md:justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-md">
 					<div className="space-y-1">
-						<p className="text-sm uppercase tracking-[0.18em] text-cyan-50/70">
+						<p className="text-sm uppercase tracking-[0.18em] text-cyan-100/70">
 							Ready to explore
 						</p>
 						<p className="text-lg md:text-xl text-white">
@@ -282,13 +282,13 @@ const AuthorityMetricsSection = () => {
 							Let’s begin a strategic conversation →
 						</p>
 					</div>
-					<div className="inline-flex items-center gap-3 rounded-full border border-cyan-200/40 bg-white/5 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-500/10">
+					<div className="inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-500/10">
 						<span
 							className="h-2 w-2 rounded-full bg-gradient-to-r from-cyan-300 to-sky-400 animate-pulse"
 							aria-hidden
 						/>
 						<span>Schedule a consultation</span>
-						<span aria-hidden className="text-cyan-100">
+						<span aria-hidden className="text-white/80">
 							→
 						</span>
 					</div>
